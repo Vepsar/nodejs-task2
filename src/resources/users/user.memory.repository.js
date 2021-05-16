@@ -1,4 +1,5 @@
 const users = [];
+const taskService = require('../tasks/task.service')
 
 const getAll = async () => users;
 
@@ -10,6 +11,7 @@ const postUser = async (data) => {
 }
 
 const deleteUser = async (id) => {
+  await taskService.deleteByUserId(id)
   const idNum = users.findIndex((user)=>user.id === id)
   users.splice(idNum, 1)
   return 'deleted'

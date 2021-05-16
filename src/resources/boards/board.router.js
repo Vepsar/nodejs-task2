@@ -2,6 +2,7 @@ const router = require('express').Router()
 const Board = require('./board.model')
 const boardService = require('./board.service')
 
+
 router.route('/').get(async (req, res) => {
     const boards = await boardService.getAllBoards()
     res.status(200).json(boards)
@@ -10,7 +11,10 @@ router.route('/').get(async (req, res) => {
 router.route('/:id').get(async (req, res) => {
     const { id } = req.params;
     const board = await boardService.getBoardById(id)
-    res.status(200).json(board)
+    if (board === undefined){
+        res.status(404).send('not found')
+    } else {res.status(200).json(board)}
+    
 })
 
 router.route('/').post(async (req, res) =>{

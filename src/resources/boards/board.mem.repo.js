@@ -1,4 +1,5 @@
 const boards = []
+const taskService = require('../tasks/task.service')
 
 const getAllBoards = async () => boards
 const getBoardById = async (id) => boards.find((board)=>board.id === id)
@@ -20,7 +21,11 @@ const updateBoard = async (id, data) => {
 }
 
 const deleteBoard = async (id) => {
-  const idNum = boards.findIndex((board)=>board.id === id)
+  const tasksid = await taskService.getAllTasks(id)
+  Promise.all(tasksid.map(async (task) =>{
+          await taskService.deleteTask(task.id)
+      }))
+      const idNum = boards.findIndex((board)=>board.id === id)
   boards.splice(idNum, 1)
 }
 
