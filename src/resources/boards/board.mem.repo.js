@@ -25,7 +25,7 @@ const deleteBoard = async (id) => {
   Promise.all(tasksid.map(async (task) =>{
           await taskService.deleteTask(task.id)
       }))
-      const idNum = boards.findIndex((board)=>board.id === id)
+  const idNum = boards.findIndex((board)=>board.id === id)
   boards.splice(idNum, 1)
 }
 

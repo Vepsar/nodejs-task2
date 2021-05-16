@@ -11,7 +11,6 @@ class Board {
         this.title = title;
         this.columns = columns.map(col => new Column(col));
     }
-
 }
 
 module.exports = Board

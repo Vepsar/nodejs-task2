@@ -21,7 +21,6 @@ class Task{
 
     static toResponse(task){
         const { title, order, description, userId, columnId, boardId} = task
-        // return {id, title, order, description, userid}
         return {title, order, description, columnId, userId, boardId}
     }
 }

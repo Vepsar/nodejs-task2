@@ -1,6 +1,5 @@
 const tasks = []
 
-// const getAllTasks = async (id) => tasks.find(task => task.boardid === id)
 const getAllTasks = async (id) => tasks.filter(task => task.boardId === id).length > 0 ? tasks.filter(task => task.boardId === id) : ['']
 const getTaskById = async (boardid, taskid) => tasks.find(task => task.boardId === boardid && task.id === taskid)
 
@@ -30,7 +29,6 @@ const deleteTask = async (taskid) =>{
 }
 
 const deleteByUserId = async (userid) => {
-    // const usersTask = tasks.filter(task => task.userId === userid)
     tasks.forEach(task => {
         if (task.userId === userid){
             Object.assign(task, {userId: null})
