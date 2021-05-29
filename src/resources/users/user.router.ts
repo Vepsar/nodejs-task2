@@ -1,9 +1,7 @@
 import express from 'express';
 const router = express.Router();
-// const User = require('./user.model');
 import User from './user.model';
 import * as usersService from './user.service';
-// const usersService = require('./user.service');
 
 router.route('/').get(async (_req: express.Request, res: express.Response) => {
   const users = await usersService.getAll();
@@ -42,4 +40,3 @@ router
   });
 
 export default router;
-// module.exports = router;

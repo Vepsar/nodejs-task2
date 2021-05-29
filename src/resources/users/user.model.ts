@@ -1,9 +1,19 @@
-const { v4: uuid } = require('uuid');
-
+import { v4 as uuid } from 'uuid';
 /**
  * Class represent a User that can word with tasks
  * @constructor
  */
+interface IUserRequest {
+  name: string;
+  login: string;
+  password: string;
+}
+
+interface IUserResp {
+  id: string;
+  name: string;
+  login: string;
+}
 export default class User {
   /**
    * Users parameters
@@ -36,10 +46,10 @@ export default class User {
    * @returns {Object}
    * Returning object like User but without the password
    */
-  static toResponse(user: User) {
+  static toResponse(user: User): IUserResp {
     const { id, name, login } = user;
     return { id, name, login };
   }
 }
 
-// module.exports = User;
+export { IUserRequest };
