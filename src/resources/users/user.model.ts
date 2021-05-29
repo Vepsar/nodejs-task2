@@ -23,6 +23,7 @@ export default class User {
    * @param {String} password - user's password'
    * if some info doesn't exist - using info from presets
    */
+
   readonly id: string;
   name: string;
   login: string;

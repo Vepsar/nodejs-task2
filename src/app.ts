@@ -6,7 +6,6 @@ import express from 'express';
 import * as swaggerUI from 'swagger-ui-express';
 import * as path from 'path';
 import * as YAML from 'yamljs';
-
 import userRouter from './resources/users/user.router';
 
 const app = express();

@@ -1,7 +1,5 @@
-// const usersRepo = require('./user.memory.repository');
 import * as usersRepo from './user.memory.repository';
-import User from './user.model';
-import { IUserRequest } from './user.model';
+import User, { IUserRequest } from './user.model';
 /**
  * Service for getting all users
  * @returns {Promise<User[]>}
@@ -41,5 +39,4 @@ const updateUser = (
   data: IUserRequest
 ): Promise<User | undefined> => usersRepo.updateUser(id, data);
 
-// module.exports = { getAll, getById, postUser, deleteUser, updateUser };
 export { getAll, getById, postUser, deleteUser, updateUser };

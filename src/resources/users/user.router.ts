@@ -1,7 +1,8 @@
 import express from 'express';
-const router = express.Router();
 import User from './user.model';
 import * as usersService from './user.service';
+
+const router = express.Router();
 
 router.route('/').get(async (_req: express.Request, res: express.Response) => {
   const users = await usersService.getAll();

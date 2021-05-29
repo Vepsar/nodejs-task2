@@ -1,7 +1,7 @@
-const users: User[] = [];
 // const taskService = require('../tasks/task.service');
-import User from './user.model';
-import { IUserRequest } from './user.model';
+import User, { IUserRequest } from './user.model';
+
+const users: User[] = [];
 /**
  * Return array of all users
  * @returns {Promise<User[]>}
@@ -64,9 +64,8 @@ const updateUser = async (
     users.splice(idNum, 1, udpUsr);
     const result = users.find((user) => user.id === id);
     return result;
-  } else {
-    return undefined;
   }
+  return undefined;
 };
 
 // module.exports = { getAll, getById, postUser, deleteUser, updateUser };
