@@ -1,12 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { v4: uuid } = require('uuid');
-/**
- * Class represent a User that can word with tasks
- * @constructor
- */
+const uuid_1 = require("uuid");
 class User {
-    constructor({ id = uuid(), name = 'USER', login = 'user', password = 'P@55w0rd', } = {}) {
+    constructor({ id = uuid_1.v4(), name = 'USER', login = 'user', password = 'P@55w0rd', } = {}) {
         this.id = id;
         this.name = name;
         this.login = login;
@@ -24,4 +20,3 @@ class User {
     }
 }
 exports.default = User;
-// module.exports = User;

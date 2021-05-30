@@ -1,5 +1,6 @@
 // const taskService = require('../tasks/task.service');
 import User, { IUserRequest } from './user.model';
+import { deleteByUserId } from '../tasks/task.service';
 
 const users: User[] = [];
 /**
@@ -37,7 +38,7 @@ const postUser = async (data: User): Promise<User> => {
  * Return message about delete
  */
 const deleteUser = async (id: string): Promise<void> => {
-  // await taskService.deleteByUserId(id);
+  await deleteByUserId(id);
   const idNum = users.findIndex((user) => user.id === id);
   users.splice(idNum, 1);
 };

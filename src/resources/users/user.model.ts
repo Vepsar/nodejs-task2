@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
  * Class represent a User that can word with tasks
  * @constructor
  */
+
 interface IUserRequest {
   name: string;
   login: string;
@@ -25,8 +26,11 @@ export default class User {
    */
 
   readonly id: string;
+
   name: string;
+
   login: string;
+
   password: string;
 
   constructor({

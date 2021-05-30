@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateUser = exports.deleteUser = exports.postUser = exports.getById = exports.getAll = void 0;
+const task_service_1 = require("../tasks/task.service");
 const users = [];
 /**
  * Return array of all users
@@ -37,7 +38,7 @@ exports.postUser = postUser;
  * Return message about delete
  */
 const deleteUser = async (id) => {
-    // await taskService.deleteByUserId(id);
+    await task_service_1.deleteByUserId(id);
     const idNum = users.findIndex((user) => user.id === id);
     users.splice(idNum, 1);
 };
@@ -45,19 +46,23 @@ exports.deleteUser = deleteUser;
 /**
  * Function for update informtaion about User by ID
  * @param {String} id - user ID
- * @param {Object} data - info to update
+ * @param {IUserRequest} data - info to update
  * @returns {Promise<User>}
  * Return updated object
  */
 const updateUser = async (id, data) => {
     const idNum = users.findIndex((user) => user.id === id);
-    const udpUsr = {
-        id,
-        name: data.name,
-        login: data.login,
-        password: data.password,
-    };
-    users.splice(idNum, 1, udpUsr);
-    return users.find((user) => user.id === id);
+    if (idNum) {
+        const udpUsr = {
+            id,
+            name: data.name,
+            login: data.login,
+            password: data.password,
+        };
+        users.splice(idNum, 1, udpUsr);
+        const result = users.find((user) => user.id === id);
+        return result;
+    }
+    return undefined;
 };
 exports.updateUser = updateUser;

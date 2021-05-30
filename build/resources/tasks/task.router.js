@@ -23,38 +23,50 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const user_model_1 = __importDefault(require("./user.model"));
-const usersService = __importStar(require("./user.service"));
+const task_model_1 = __importDefault(require("./task.model"));
+const taskService = __importStar(require("./task.service"));
 const router = express_1.default.Router();
-router.route('/').get(async (_req, res) => {
-    const users = await usersService.getAll();
-    res.json(users.map(user_model_1.default.toResponse));
-});
 router
-    .route('/:id')
+    .route('/:boardid/tasks')
     .get(async (req, res) => {
-    const { id } = req.params;
-    const user = await usersService.getById(id);
-    res.status(200).json(user_model_1.default.toResponse(user));
-});
-router.route('/').post(async (req, res) => {
-    const data = new user_model_1.default({ ...req.body });
-    const newUser = await usersService.postUser(data);
-    res.status(201).json(user_model_1.default.toResponse(newUser));
+    const { boardid } = req.params;
+    const tasks = await taskService.getAllTasks(boardid);
+    res.json(tasks).status(200);
 });
 router
-    .route('/:id')
-    .delete(async (req, res) => {
-    const { id } = req.params;
-    usersService.deleteUser(id);
-    res.status(204).send('deleted');
+    .route('/:boardid/tasks/:taskid')
+    .get(async (req, res) => {
+    const { boardid, taskid } = req.params;
+    const task = await taskService.getTaskById(boardid, taskid);
+    if (task === undefined) {
+        res.status(404).send('not found');
+    }
+    else {
+        res.status(200).json(task);
+    }
 });
 router
-    .route('/:id')
+    .route('/:boardid/tasks')
+    .post(async (req, res) => {
+    const { boardid } = req.params;
+    const data = new task_model_1.default({ ...req.body, boardId: boardid });
+    const task = await taskService.createTask(data);
+    res.status(201).json(task);
+});
+router
+    .route('/:boardid/tasks/:taskid')
     .put(async (req, res) => {
-    const { id } = req.params;
-    const data = { ...req.body };
-    const updUser = await usersService.updateUser(id, data);
-    res.json(user_model_1.default.toResponse(updUser)).status(200);
+    const { boardid, taskid } = req.params;
+    const data = req.body;
+    const updTask = await taskService.updateTask(boardid, taskid, data);
+    res.status(200).json(updTask);
+});
+router
+    .route('/:boardid/tasks/:taskid')
+    .delete(async (req, res) => {
+    const { taskid } = req.params;
+    taskService.deleteTask(taskid);
+    res.send('deleted');
 });
 exports.default = router;
+// module.exports = router

@@ -20,7 +20,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateUser = exports.deleteUser = exports.postUser = exports.getById = exports.getAll = void 0;
-// const usersRepo = require('./user.memory.repository');
 const usersRepo = __importStar(require("./user.memory.repository"));
 /**
  * Service for getting all users
