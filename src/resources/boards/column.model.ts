@@ -1,8 +1,6 @@
 // const { v4: uuid } = require('uuid');
 import { v4 as uuid } from 'uuid';
 
-const orderCount: number = 0;
-
 /**
  * Class represent a columns to a board
  * @constructor
@@ -21,7 +19,7 @@ export default class Column {
 
   order: number;
 
-  constructor({ id = uuid(), title = 'Title', order = orderCount } = {}) {
+  constructor({ id = uuid(), title = 'Title', order = 0 } = {}) {
     this.id = id;
     this.title = title;
     this.order = order;
