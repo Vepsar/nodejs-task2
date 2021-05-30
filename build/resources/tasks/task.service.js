@@ -23,15 +23,15 @@ exports.deleteByUserId = exports.deleteTask = exports.updateTask = exports.creat
 const taskRepo = __importStar(require("./task.mem.repo"));
 /**
  * Service for getting all tasks by the board ID
- * @param {String} id - board ID
+ * @param {String|undefined} id - board ID
  * @returns {Promise<Task[]>}
  */
 const getAllTasks = (id) => taskRepo.getAllTasks(id);
 exports.getAllTasks = getAllTasks;
 /**
  * Service for getting defined task by board ID and task ID
- * @param {String} boardid - board ID
- * @param {String} taskid - task ID
+ * @param {String|undefined} boardid - board ID
+ * @param {String|undefined} taskid - task ID
  * @returns {Promise<Task>}
  */
 const getTaskById = (boardid, taskid) => taskRepo.getTaskById(boardid, taskid);
@@ -45,8 +45,8 @@ const createTask = (data) => taskRepo.createTask(data);
 exports.createTask = createTask;
 /**
  * Service for updating tasks
- * @param {String} boardid - board ID
- * @param {String} taskid - task ID
+ * @param {String|undefined} boardid - board ID
+ * @param {String|undefined} taskid - task ID
  * @param {ITaskRequest} data - updating info
  * @returns {Promise<Task>} - return updated task
  */
@@ -54,13 +54,13 @@ const updateTask = (boardid, taskid, data) => taskRepo.updateTask(boardid, taski
 exports.updateTask = updateTask;
 /**
  * Service for deleting task by ID
- * @param {String} taskid - task ID
+ * @param {String|undefined} taskid - task ID
  */
 const deleteTask = (taskid) => taskRepo.deleteTask(taskid);
 exports.deleteTask = deleteTask;
 /**
  * Service for removing deleted User from their tasks
- * @param {String} userid - ID of deleted User
+ * @param {String|undefined} userid - ID of deleted User
  */
 const deleteByUserId = (userid) => taskRepo.deleteByUserId(userid);
 exports.deleteByUserId = deleteByUserId;

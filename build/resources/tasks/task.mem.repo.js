@@ -36,17 +36,20 @@ exports.createTask = createTask;
  */
 const updateTask = async (boardid, taskid, data) => {
     const idNum = tasks.findIndex((task) => task.id === taskid);
-    const updTask = {
-        id: taskid,
-        title: data.title,
-        order: data.order,
-        description: data.description,
-        userId: data.userId,
-        boardId: boardid,
-        columnId: data.columnId,
-    };
-    tasks.splice(idNum, 1, updTask);
-    return tasks.find((task) => task.boardId === boardid && task.id === taskid);
+    if (typeof taskid === 'string' && typeof boardid === 'string') {
+        const updTask = {
+            id: taskid,
+            title: data.title,
+            order: data.order,
+            description: data.description,
+            userId: data.userId,
+            boardId: boardid,
+            columnId: data.columnId,
+        };
+        tasks.splice(idNum, 1, updTask);
+        return tasks.find((task) => task.boardId === boardid && task.id === taskid);
+    }
+    return undefined;
 };
 exports.updateTask = updateTask;
 /**

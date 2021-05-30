@@ -13,7 +13,7 @@ router
   .route('/:id')
   .get(async (req: express.Request, res: express.Response) => {
     const { id } = req.params;
-    const user = await usersService.getById(id!);
+    const user = await usersService.getById(id);
     res.status(200).json(User.toResponse(user));
   });
 
@@ -27,7 +27,7 @@ router
   .route('/:id')
   .delete(async (req: express.Request, res: express.Response) => {
     const { id } = req.params;
-    usersService.deleteUser(id!);
+    usersService.deleteUser(id);
     res.status(204).send('deleted');
   });
 
@@ -36,8 +36,12 @@ router
   .put(async (req: express.Request, res: express.Response) => {
     const { id } = req.params;
     const data = { ...req.body };
-    const updUser = await usersService.updateUser(id!, data);
-    res.json(User.toResponse(updUser!)).status(200);
+    const updUser = await usersService.updateUser(id, data);
+    if (updUser === undefined) {
+      res.status(200).send('User error: not found');
+    } else {
+      res.json(User.toResponse(updUser)).status(200);
+    }
   });
 
 export default router;

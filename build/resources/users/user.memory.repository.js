@@ -52,7 +52,7 @@ exports.deleteUser = deleteUser;
  */
 const updateUser = async (id, data) => {
     const idNum = users.findIndex((user) => user.id === id);
-    if (idNum) {
+    if (idNum && typeof id === 'string') {
         const udpUsr = {
             id,
             name: data.name,

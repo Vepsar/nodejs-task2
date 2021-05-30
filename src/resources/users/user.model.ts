@@ -25,7 +25,7 @@ export default class User {
    * if some info doesn't exist - using info from presets
    */
 
-  readonly id: string;
+  id: string;
 
   name: string;
 

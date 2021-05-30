@@ -55,6 +55,11 @@ router
     const { id } = req.params;
     const data = { ...req.body };
     const updUser = await usersService.updateUser(id, data);
-    res.json(user_model_1.default.toResponse(updUser)).status(200);
+    if (updUser === undefined) {
+        res.status(404).send('User error: not found');
+    }
+    else {
+        res.json(user_model_1.default.toResponse(updUser)).status(200);
+    }
 });
 exports.default = router;

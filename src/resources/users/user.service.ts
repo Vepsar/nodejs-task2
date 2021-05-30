@@ -11,7 +11,8 @@ const getAll = (): Promise<User[]> => usersRepo.getAll();
  * @param {String} id - user ID
  * @returns {Promise<User>}
  */
-const getById = (id: string): Promise<User> => usersRepo.getById(id);
+const getById = (id: string | undefined): Promise<User> =>
+  usersRepo.getById(id);
 
 /**
  * Service for creating user
@@ -25,7 +26,8 @@ const postUser = (user: User): Promise<User> => usersRepo.postUser(user);
  * Deleting user by his ID
  * @param {String} id - ID of removing user
  */
-const deleteUser = (id: string): Promise<void> => usersRepo.deleteUser(id);
+const deleteUser = (id: string | undefined): Promise<void> =>
+  usersRepo.deleteUser(id);
 
 /**
  * Service for updating user info
@@ -35,7 +37,7 @@ const deleteUser = (id: string): Promise<void> => usersRepo.deleteUser(id);
  * Return updated object
  */
 const updateUser = (
-  id: string,
+  id: string | undefined,
   data: IUserRequest
 ): Promise<User | undefined> => usersRepo.updateUser(id, data);
 

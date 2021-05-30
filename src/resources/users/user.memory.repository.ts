@@ -1,4 +1,3 @@
-// const taskService = require('../tasks/task.service');
 import User, { IUserRequest } from './user.model';
 import { deleteByUserId } from '../tasks/task.service';
 
@@ -15,7 +14,7 @@ const getAll = async (): Promise<User[]> => users;
  * @returns {Promise<User>}
  * Return Object by class User
  */
-const getById = async (id: string): Promise<User> => {
+const getById = async (id: string | undefined): Promise<User> => {
   const res: User = users.find((user) => user.id === id) as User;
   return res;
 };
@@ -37,7 +36,7 @@ const postUser = async (data: User): Promise<User> => {
  * @returns {Promise<void>}
  * Return message about delete
  */
-const deleteUser = async (id: string): Promise<void> => {
+const deleteUser = async (id: string | undefined): Promise<void> => {
   await deleteByUserId(id);
   const idNum = users.findIndex((user) => user.id === id);
   users.splice(idNum, 1);
@@ -51,11 +50,11 @@ const deleteUser = async (id: string): Promise<void> => {
  * Return updated object
  */
 const updateUser = async (
-  id: string,
+  id: string | undefined,
   data: IUserRequest
 ): Promise<User | undefined> => {
   const idNum = users.findIndex((user) => user.id === id);
-  if (idNum) {
+  if (idNum && typeof id === 'string') {
     const udpUsr = {
       id,
       name: data.name,
@@ -69,5 +68,4 @@ const updateUser = async (
   return undefined;
 };
 
-// module.exports = { getAll, getById, postUser, deleteUser, updateUser };
 export { getAll, getById, postUser, deleteUser, updateUser };

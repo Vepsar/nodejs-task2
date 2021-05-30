@@ -3,20 +3,21 @@ import Task, { ITaskRequest } from './task.model';
 
 /**
  * Service for getting all tasks by the board ID
- * @param {String} id - board ID
+ * @param {String|undefined} id - board ID
  * @returns {Promise<Task[]>}
  */
-const getAllTasks = (id: string): Promise<Task[]> => taskRepo.getAllTasks(id);
+const getAllTasks = (id: string | undefined): Promise<Task[]> =>
+  taskRepo.getAllTasks(id);
 
 /**
  * Service for getting defined task by board ID and task ID
- * @param {String} boardid - board ID
- * @param {String} taskid - task ID
+ * @param {String|undefined} boardid - board ID
+ * @param {String|undefined} taskid - task ID
  * @returns {Promise<Task>}
  */
 const getTaskById = (
-  boardid: string,
-  taskid: string
+  boardid: string | undefined,
+  taskid: string | undefined
 ): Promise<Task | undefined> => taskRepo.getTaskById(boardid, taskid);
 
 /**
@@ -28,29 +29,29 @@ const createTask = (data: Task): Promise<Task> => taskRepo.createTask(data);
 
 /**
  * Service for updating tasks
- * @param {String} boardid - board ID
- * @param {String} taskid - task ID
+ * @param {String|undefined} boardid - board ID
+ * @param {String|undefined} taskid - task ID
  * @param {ITaskRequest} data - updating info
  * @returns {Promise<Task>} - return updated task
  */
 const updateTask = (
-  boardid: string,
-  taskid: string,
+  boardid: string | undefined,
+  taskid: string | undefined,
   data: ITaskRequest
 ): Promise<Task | undefined> => taskRepo.updateTask(boardid, taskid, data);
 
 /**
  * Service for deleting task by ID
- * @param {String} taskid - task ID
+ * @param {String|undefined} taskid - task ID
  */
-const deleteTask = (taskid: string): Promise<void> =>
+const deleteTask = (taskid: string | undefined): Promise<void> =>
   taskRepo.deleteTask(taskid);
 
 /**
  * Service for removing deleted User from their tasks
- * @param {String} userid - ID of deleted User
+ * @param {String|undefined} userid - ID of deleted User
  */
-const deleteByUserId = (userid: string): Promise<void> =>
+const deleteByUserId = (userid: string | undefined): Promise<void> =>
   taskRepo.deleteByUserId(userid);
 
 export {

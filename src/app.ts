@@ -1,7 +1,3 @@
-// const userRouter = require('./resources/users/user.router');
-// const boardRouter = require('./resources/boards/board.router');
-// const taskRouter = require('./resources/tasks/task.router');
-
 import express from 'express';
 import * as swaggerUI from 'swagger-ui-express';
 import * as path from 'path';
@@ -29,5 +25,4 @@ app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
 
-// module.exports = app;
 export { app };
