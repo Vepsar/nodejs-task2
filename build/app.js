@@ -31,6 +31,8 @@ const swaggerUI = __importStar(require("swagger-ui-express"));
 const path = __importStar(require("path"));
 const YAML = __importStar(require("yamljs"));
 const user_router_1 = __importDefault(require("./resources/users/user.router"));
+const board_router_1 = __importDefault(require("./resources/boards/board.router"));
+const task_router_1 = __importDefault(require("./resources/tasks/task.router"));
 const app = express_1.default();
 exports.app = app;
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -44,3 +46,5 @@ app.use('/', (req, res, next) => {
     next();
 });
 app.use('/users', user_router_1.default);
+app.use('/boards', board_router_1.default);
+app.use('/boards', task_router_1.default);

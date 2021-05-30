@@ -5,11 +5,9 @@ const tasks = [];
 /**
  * Return all tasks by providing board ID or empty no-zero-length array if tasks has no exsist
  * @param {String} id - board's ID
- * @returns {Promise<Task[]|string[]>}
+ * @returns {Promise<Task[]>}
  */
-const getAllTasks = async (id) => tasks.filter((task) => task.boardId === id).length > 0
-    ? tasks.filter((task) => task.boardId === id)
-    : [''];
+const getAllTasks = async (id) => tasks.filter((task) => task.boardId === id);
 exports.getAllTasks = getAllTasks;
 /**
  * Return task from the board by providing board's ID and task ID
@@ -72,11 +70,3 @@ const deleteByUserId = async (userid) => {
     });
 };
 exports.deleteByUserId = deleteByUserId;
-// module.exports = {
-//   getAllTasks,
-//   getTaskById,
-//   createTask,
-//   updateTask,
-//   deleteTask,
-//   deleteByUserId,
-// };

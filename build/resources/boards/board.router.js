@@ -23,49 +23,43 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const task_model_1 = __importDefault(require("./task.model"));
-const taskService = __importStar(require("./task.service"));
+const board_model_1 = __importDefault(require("./board.model"));
+const boardService = __importStar(require("./board.service"));
 const router = express_1.default.Router();
-router
-    .route('/:boardid/tasks')
-    .get(async (req, res) => {
-    const { boardid } = req.params;
-    const tasks = await taskService.getAllTasks(boardid);
-    res.json(tasks).status(200);
+router.route('/').get(async (_req, res) => {
+    const boards = await boardService.getAllBoards();
+    res.status(200).json(boards);
 });
 router
-    .route('/:boardid/tasks/:taskid')
+    .route('/:id')
     .get(async (req, res) => {
-    const { boardid, taskid } = req.params;
-    const task = await taskService.getTaskById(boardid, taskid);
-    if (task === undefined) {
+    const { id } = req.params;
+    const board = await boardService.getBoardById(id);
+    if (board === undefined) {
         res.status(404).send('not found');
     }
     else {
-        res.status(200).json(task);
+        res.status(200).json(board);
     }
 });
-router
-    .route('/:boardid/tasks')
-    .post(async (req, res) => {
-    const { boardid } = req.params;
-    const data = new task_model_1.default({ ...req.body, boardId: boardid });
-    const task = await taskService.createTask(data);
-    res.status(201).json(task);
+router.route('/').post(async (req, res) => {
+    const data = new board_model_1.default({ ...req.body });
+    const board = await boardService.createBoard(data);
+    res.status(201).json(board);
 });
 router
-    .route('/:boardid/tasks/:taskid')
-    .put(async (req, res) => {
-    const { boardid, taskid } = req.params;
-    const data = req.body;
-    const updTask = await taskService.updateTask(boardid, taskid, data);
-    res.status(200).json(updTask);
-});
-router
-    .route('/:boardid/tasks/:taskid')
+    .route('/:id')
     .delete(async (req, res) => {
-    const { taskid } = req.params;
-    taskService.deleteTask(taskid);
-    res.send('deleted');
+    const { id } = req.params;
+    boardService.deleteBoard(id);
+    res.status(204).send('deleted');
+});
+router
+    .route('/:id')
+    .put(async (req, res) => {
+    const { id } = req.params;
+    const data = { ...req.body };
+    const updBoard = await boardService.updateBoard(id, data);
+    res.json(updBoard).status(200);
 });
 exports.default = router;

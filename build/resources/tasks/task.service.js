@@ -20,7 +20,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteByUserId = exports.deleteTask = exports.updateTask = exports.createTask = exports.getTaskById = exports.getAllTasks = void 0;
-// const taskRepo = require('./task.mem.repo');
 const taskRepo = __importStar(require("./task.mem.repo"));
 /**
  * Service for getting all tasks by the board ID

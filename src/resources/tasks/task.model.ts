@@ -26,11 +26,17 @@ export default class Task {
    */
 
   readonly id: string;
+
   title: string;
+
   order: number;
+
   description: string;
+
   userId: string;
+
   boardId: string;
+
   columnId: string;
 
   constructor({
@@ -64,4 +70,3 @@ export default class Task {
 }
 
 export { ITaskRequest };
-// module.exports = Task;

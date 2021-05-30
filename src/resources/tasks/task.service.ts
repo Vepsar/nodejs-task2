@@ -1,4 +1,3 @@
-// const taskRepo = require('./task.mem.repo');
 import * as taskRepo from './task.mem.repo';
 import Task, { ITaskRequest } from './task.model';
 
@@ -7,8 +6,7 @@ import Task, { ITaskRequest } from './task.model';
  * @param {String} id - board ID
  * @returns {Promise<Task[]>}
  */
-const getAllTasks = (id: string): Promise<Task[] | string[]> =>
-  taskRepo.getAllTasks(id);
+const getAllTasks = (id: string): Promise<Task[]> => taskRepo.getAllTasks(id);
 
 /**
  * Service for getting defined task by board ID and task ID
