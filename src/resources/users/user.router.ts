@@ -31,17 +31,17 @@ router
     res.status(204).send('deleted');
   });
 
-router
-  .route('/:id')
-  .put(async (req: express.Request, res: express.Response) => {
+router.route('/:id').put(
+  async (req: express.Request, res: express.Response): Promise<void> => {
     const { id } = req.params;
     const data = { ...req.body };
     const updUser = await usersService.updateUser(id, data);
-    if (updUser === undefined) {
-      res.status(200).send('User error: not found');
+    if (updUser !== undefined) {
+      res.json(User.toResponse(updUser));
     } else {
-      res.json(User.toResponse(updUser)).status(200);
+      res.status(404).send('User error: not found');
     }
-  });
+  }
+);
 
 export default router;
