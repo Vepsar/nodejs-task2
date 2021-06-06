@@ -1,47 +1,79 @@
-import express from 'express';
+import express, { NextFunction } from 'express';
 import Board from './board.model';
 import * as boardService from './board.service';
 
-const router = express.Router();
-
-router.route('/').get(async (_req: express.Request, res: express.Response) => {
-  const boards = await boardService.getAllBoards();
-  res.status(200).json(boards);
-});
+let router = express.Router({ mergeParams: true });
 
 router
-  .route('/:id')
-  .get(async (req: express.Request, res: express.Response) => {
-    const { id } = req.params;
-    const board = await boardService.getBoardById(id!);
-    if (board === undefined) {
-      res.status(404).send('not found');
-    } else {
-      res.status(200).json(board);
+  .route('/')
+  .get(
+    async (
+      _req: express.Request,
+      res: express.Response,
+      next: NextFunction
+    ) => {
+      const boards = await boardService.getAllBoards();
+      res.status(200).json(boards);
+      next();
     }
-  });
-
-router.route('/').post(async (req: express.Request, res: express.Response) => {
-  const data = new Board({ ...req.body });
-  const board = await boardService.createBoard(data);
-  res.status(201).json(board);
-});
+  );
 
 router
   .route('/:id')
-  .delete(async (req: express.Request, res: express.Response) => {
-    const { id } = req.params;
-    boardService.deleteBoard(id!);
-    res.status(204).send('deleted');
-  });
+  .get(
+    async (req: express.Request, res: express.Response, next: NextFunction) => {
+      const { id } = req.params;
+      const board = await boardService.getBoardById(id!);
+      if (board === undefined) {
+        res.status(404).send('not found');
+        res.statusMessage = 'Board ERROR: Board not found';
+      } else {
+        res.status(200).json(board);
+      }
+      next();
+    }
+  );
+
+router
+  .route('/')
+  .post(
+    async (req: express.Request, res: express.Response, next: NextFunction) => {
+      const data = new Board({ ...req.body });
+      const board = await boardService.createBoard(data);
+      res.status(201).json(board);
+      res.statusMessage = 'Board created';
+      next();
+    }
+  );
 
 router
   .route('/:id')
-  .put(async (req: express.Request, res: express.Response) => {
-    const { id } = req.params;
-    const data = { ...req.body };
-    const updBoard = await boardService.updateBoard(id!, data);
-    res.json(updBoard).status(200);
-  });
+  .delete(
+    async (req: express.Request, res: express.Response, next: NextFunction) => {
+      const { id } = req.params;
+      boardService.deleteBoard(id);
+      res.status(204).send('deleted');
+      res.statusMessage = 'Board was succesfully deleted';
+      next();
+    }
+  );
+
+router
+  .route('/:id')
+  .put(
+    async (req: express.Request, res: express.Response, next: NextFunction) => {
+      const { id } = req.params;
+      const data = { ...req.body };
+      const updBoard = await boardService.updateBoard(id, data);
+      if (updBoard === undefined) {
+        res.status(404);
+        res.statusMessage = 'Board ERROR: Cannot update board';
+      } else {
+        res.json(updBoard).status(200);
+        res.statusMessage = 'Board was succesfully updated';
+      }
+      next();
+    }
+  );
 
 export default router;

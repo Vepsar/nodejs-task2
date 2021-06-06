@@ -42,17 +42,20 @@ const createBoard = async (data: Board): Promise<Board> => {
  */
 
 const updateBoard = async (
-  id: string,
+  id: string | undefined,
   data: IBoardRequest
 ): Promise<Board | undefined> => {
   const idNum = boards.findIndex((board) => board.id === id);
-  const updBrd = {
-    id,
-    title: data.title,
-    columns: data.columns,
-  };
-  boards.splice(idNum, 1, updBrd);
-  return boards.find((board) => board.id === id);
+  if (idNum !== undefined && typeof id === 'string') {
+    const updBrd = {
+      id,
+      title: data.title,
+      columns: data.columns,
+    };
+    boards.splice(idNum, 1, updBrd);
+    return boards.find((board) => board.id === id);
+  }
+  return undefined;
 };
 
 /**
@@ -60,7 +63,7 @@ const updateBoard = async (
  * @param {String} id id of board that need to delete
  */
 
-const deleteBoard = async (id: string): Promise<void> => {
+const deleteBoard = async (id: string | undefined): Promise<void> => {
   const tasksid = await getAllTasks(id);
   Promise.all(
     tasksid.map(

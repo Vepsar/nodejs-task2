@@ -54,7 +54,7 @@ const updateUser = async (
   data: IUserRequest
 ): Promise<User | undefined> => {
   const idNum = users.findIndex((user) => user.id === id);
-  if (idNum && typeof id === 'string') {
+  if ((idNum || idNum === 0) && id) {
     const udpUsr = {
       id,
       name: data.name,
@@ -62,7 +62,7 @@ const updateUser = async (
       password: data.password,
     };
     users.splice(idNum, 1, udpUsr);
-    const result = users.find((user) => user.id === id);
+    const result = getById(id);
     return result;
   }
   return undefined;

@@ -26,16 +26,17 @@ const createBoard = (data: Board): Promise<Board> =>
  * Service to delete board by ID
  * @param {String} id - ID of board that need to delete
  */
-const deleteBoard = (id: string): Promise<void> => boardRepo.deleteBoard(id);
+const deleteBoard = (id: string | undefined): Promise<void> =>
+  boardRepo.deleteBoard(id);
 
 /**
  * Service to updating board bt providing ID
- * @param {String} id - board's ID
- * @param {Board} data - updating info
+ * @param {String|undefined} id - board's ID
+ * @param {IBoardRequest} data - updating info
  * @returns {Promise<Board>} - return updated object
  */
 const updateBoard = (
-  id: string,
+  id: string | undefined,
   data: IBoardRequest
 ): Promise<Board | undefined> => boardRepo.updateBoard(id, data);
 
