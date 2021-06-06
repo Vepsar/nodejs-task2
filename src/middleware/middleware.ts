@@ -119,7 +119,7 @@ const uncaughtExceptionHandler = (err: Error, origin: string): void => {
 };
 
 const unhandledRejectionHandler = (
-  reason: Error | any,
+  reason: Error,
   _promise: Promise<any>
 ): void => {
   const now: Date = new Date();
