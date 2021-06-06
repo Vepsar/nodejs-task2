@@ -32,14 +32,13 @@ function logger(
       }
     });
     counter += 1;
-    // process.stdout(log)
     // console.log(log);
   });
   res.on('finish', () => {});
   next();
 }
 
-function errorLogger(
+function errorDefLogger(
   _req: express.Request,
   res: express.Response,
   next: express.NextFunction
@@ -48,32 +47,96 @@ function errorLogger(
   if (!correctCodes.includes(res.statusCode)) {
     const now = new Date();
     const time = dat.format(now, 'ddd, DD.MMM.YY  HH:mm:ss');
-    finished(_req, res, (err) => {
-      const errlog: string = `Error №${errcount}
+    if (res.statusCode !== 404) {
+      const stnderr: string = `Error №${errcount}
     Time: ${time}
-    Status: ${res.statusCode}
-    Error message: ${res.statusMessage}
-    \n`;
-      if (err) {
-        throw err;
-      }
+    Status: 500
+    Error message: Internal Server Error
+      \n`;
       fs.appendFile(
         __dirname + `../../logs/errors.txt`,
-        errlog,
+        stnderr,
         function (err) {
           if (err) {
-            throw new Error();
+            throw err;
           }
         }
       );
       errcount += 1;
-      // console.log(errlog);
-    });
+    } else {
+      finished(_req, res, (err) => {
+        const errlog: string = `Error №${errcount}
+    Time: ${time}
+    Status: ${res.statusCode}
+    Error message: ${res.statusMessage}
+    \n`;
+        if (err) {
+          throw err;
+        }
+        fs.appendFile(
+          __dirname + `../../logs/errors.txt`,
+          errlog,
+          function (err) {
+            if (err) {
+              throw new Error();
+            }
+          }
+        );
+        errcount += 1;
+      });
+    }
   }
+
   //
   // process.on('uncaughtException',()=>{})
   // process.on('unhandledRejection', ()=>{})
   next();
 }
 
-export { logger, errorLogger };
+function errLogger(
+  err: Error,
+  _req: express.Request,
+  _res: express.Response,
+  next: express.NextFunction
+) {
+  if (err) {
+    const now = new Date();
+    const time = dat.format(now, 'ddd, DD.MMM.YY  HH:mm:ss');
+    const stnderr: string = `Error №${errcount}
+    Time: ${time}
+    Status: 500
+    Error message: Internal Server Error
+      \n`;
+    fs.appendFile(__dirname + `../../logs/errors.txt`, stnderr, function (err) {
+      if (err) {
+        throw err;
+      }
+    });
+    errcount += 1;
+    // process.stdout.write('a')
+    next();
+  }
+}
+
+function uncaughtExceptionHandler(err: Error, origin: string) {
+  fs.writeSync(
+    process.stderr.fd,
+    `Caught exception: ${err}\n` + `Exception origin: ${origin}`
+  );
+  const now = new Date();
+  const time = dat.format(now, 'ddd, DD.MMM.YY  HH:mm:ss');
+  const stnderr: string =
+    `Error №${errcount}
+  Time: ${time}
+  Caught exception: ${err}\n` +
+    `Exception origin: ${origin}
+    \n`;
+  fs.appendFile(__dirname + `../../logs/errors.txt`, stnderr, function (err) {
+    if (err) {
+      throw err;
+    }
+  });
+  errcount += 1;
+}
+
+export { logger, errorDefLogger, errLogger, uncaughtExceptionHandler };
