@@ -10,6 +10,7 @@ import {
   errorDefLogger,
   errLogger,
   uncaughtExceptionHandler,
+  unhandledRejectionHandler,
 } from './middleware/middleware';
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -27,13 +28,15 @@ app.use('/', (req, res, next) => {
 });
 
 process.on('uncaughtException', uncaughtExceptionHandler);
+process.on('unhandledRejection', unhandledRejectionHandler);
 
 app.use('/users', userRouter);
-
 app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
+
 app.use(logger);
 app.use(errorDefLogger);
 app.use(errLogger);
 // throw Error('Oops!');
+// Promise.reject(Error('Oops!'));
 export { app };
