@@ -2,12 +2,13 @@ import fs from 'fs';
 import express from 'express';
 import { finished } from 'stream';
 import dat from 'date-and-time';
+import path from 'path';
 
 var counter: number = 1;
 var errcount: number = 1;
 
-fs.writeFileSync(__dirname + `../../logs/logs.txt`, '');
-fs.writeFileSync(__dirname + `../../logs/errors.txt`, '');
+fs.writeFileSync(path.dirname(__dirname) + `/logs/logs.txt`, '');
+fs.writeFileSync(path.dirname(__dirname) + `/logs/errors.txt`, '');
 
 const logger = (
   req: express.Request,
