@@ -29,15 +29,18 @@ const logger = (
     )}\nBody: ${JSON.stringify(req.body)}\nStatus: ${res.statusCode} ${
       res.statusMessage
     }\n\n`;
-    fs.appendFile(__dirname + `../../logs/logs.txt`, log, function (err) {
-      if (err) {
-        throw new Error();
+    fs.appendFile(
+      path.dirname(__dirname) + `/logs/logs.txt`,
+      log,
+      function (err) {
+        if (err) {
+          throw new Error();
+        }
       }
-    });
+    );
     counter += 1;
     process.stdout.write(log);
   });
-  res.on('finish', () => {});
   next();
 };
 
@@ -53,7 +56,7 @@ const errorDefLogger = (
     if (res.statusCode !== 404) {
       const stnderr: string = `Error №${errcount}\nTime: ${time}\nStatus: 500\nError message: Internal Server Error\n\n`;
       fs.appendFile(
-        __dirname + `../../logs/errors.txt`,
+        path.dirname(__dirname) + `/logs/errors.txt`,
         stnderr,
         function (err) {
           if (err) {
@@ -69,7 +72,7 @@ const errorDefLogger = (
           throw err;
         }
         fs.appendFile(
-          __dirname + `../../logs/errors.txt`,
+          path.dirname(__dirname) + `/logs/errors.txt`,
           errlog,
           function (err) {
             if (err) {
@@ -95,11 +98,15 @@ const errLogger = (
     const now: Date = new Date();
     const time: string = dat.format(now, 'ddd, DD.MMM.YY  HH:mm:ss');
     const stnderr: string = `Error №${errcount}\nTime: ${time}\nStatus: 500\nError message: Internal Server Error\n\n`;
-    fs.appendFile(__dirname + `../../logs/errors.txt`, stnderr, function (err) {
-      if (err) {
-        throw err;
+    fs.appendFile(
+      path.dirname(__dirname) + `/logs/errors.txt`,
+      stnderr,
+      function (err) {
+        if (err) {
+          throw err;
+        }
       }
-    });
+    );
     errcount += 1;
     process.stdout.write(stnderr);
     next();
@@ -110,27 +117,35 @@ const uncaughtExceptionHandler = (err: Error, origin: string): void => {
   const now: Date = new Date();
   const time: string = dat.format(now, 'ddd, DD.MMM.YY  HH:mm:ss');
   const stnderr: string = `Error №${errcount}\nTime: ${time}\nType: Uncaught Exception\nCaught exception: ${err}\nException origin: ${origin}\n\n`;
-  fs.appendFile(__dirname + `../../logs/errors.txt`, stnderr, function (err) {
-    if (err) {
-      throw err;
+  fs.appendFile(
+    path.dirname(__dirname) + `/logs/errors.txt`,
+    stnderr,
+    function (err) {
+      if (err) {
+        throw err;
+      }
     }
-  });
+  );
   errcount += 1;
   process.stdout.write(stnderr);
 };
 
 const unhandledRejectionHandler = (
   reason: Error,
-  _promise: Promise<any>
+  _promise: Promise<void>
 ): void => {
   const now: Date = new Date();
   const time: string = dat.format(now, 'ddd, DD.MMM.YY  HH:mm:ss');
   const stnderr: string = `Error №${errcount}\nTime: ${time}\nType: Unhandled Rejection\nError message: ${reason}\n\n`;
-  fs.appendFile(__dirname + `../../logs/errors.txt`, stnderr, function (err) {
-    if (err) {
-      throw err;
+  fs.appendFile(
+    path.dirname(__dirname) + `/logs/errors.txt`,
+    stnderr,
+    function (err) {
+      if (err) {
+        throw err;
+      }
     }
-  });
+  );
   process.stdout.write(stnderr);
 };
 

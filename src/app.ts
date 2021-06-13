@@ -37,6 +37,10 @@ app.use('/boards', taskRouter);
 app.use(logger);
 app.use(errorDefLogger);
 app.use(errLogger);
+app.use('/exit', () => {
+  // new Error('12456425342634hgfdhcvrdejy');
+  process.exit(10);
+});
 // throw Error('Oops!');
 // Promise.reject(Error('Oops!'));
 export { app };

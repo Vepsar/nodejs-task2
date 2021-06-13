@@ -10,6 +10,10 @@ services:
       - PORT=${PORT}
     networks:
       - user-net
+    volumes:
+      - ./logs:/usr/app/src/logs
+      - ./src:/usr/app/src
+      - .:/usr/app
     restart: always
   postgres:
     build: ./database/
