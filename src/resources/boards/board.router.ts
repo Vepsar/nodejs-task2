@@ -2,7 +2,7 @@ import express, { NextFunction } from 'express';
 import Board from './board.model';
 import * as boardService from './board.service';
 
-let router = express.Router({ mergeParams: true });
+const router = express.Router({ mergeParams: true });
 
 router
   .route('/')

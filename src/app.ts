@@ -11,7 +11,8 @@ import {
   errLogger,
   uncaughtExceptionHandler,
   unhandledRejectionHandler,
-} from './middleware/middleware';
+} from './utils/middleware';
+
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 

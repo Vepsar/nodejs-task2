@@ -11,7 +11,7 @@ const getAll = (): Promise<User[]> => usersRepo.getAll();
  * @param {String} id - user ID
  * @returns {Promise<User>}
  */
-const getById = (id: string | undefined): Promise<User> =>
+const getById = (id: string | undefined): Promise<User | undefined> =>
   usersRepo.getById(id);
 
 /**

@@ -1,12 +1,19 @@
-import User, { IUserRequest } from './user.model';
+import { IUserRequest } from './user.model';
 import { deleteByUserId } from '../tasks/task.service';
+import { User } from '../entities/user.entity';
+import { getRepository } from 'typeorm';
 
 const users: User[] = [];
+
 /**
  * Return array of all users
  * @returns {Promise<User[]>}
  */
-const getAll = async (): Promise<User[]> => users;
+const getAll = async (): Promise<User[]> => {
+  const userRepo = getRepository(User);
+  return userRepo.find({ where: {} });
+  // return users
+};
 
 /**
  * Function to return user by providing ID
@@ -14,8 +21,11 @@ const getAll = async (): Promise<User[]> => users;
  * @returns {Promise<User>}
  * Return Object by class User
  */
-const getById = async (id: string | undefined): Promise<User> => {
-  const res: User = users.find((user) => user.id === id) as User;
+const getById = async (id: string | undefined): Promise<User | undefined> => {
+  const userRepo = getRepository(User);
+  const res: User | undefined = await userRepo.findOne(id);
+  // const res: User = users.find((user) => user.id === id) as User;
+  if (res === undefined) return undefined;
   return res;
 };
 
@@ -26,8 +36,11 @@ const getById = async (id: string | undefined): Promise<User> => {
  * Return created User
  */
 const postUser = async (data: User): Promise<User> => {
-  users.push(data);
-  return data;
+  const userRepo = getRepository(User);
+  const newUser = userRepo.create(data);
+  const savedUser = userRepo.save(newUser);
+  // users.push(data);
+  return savedUser;
 };
 
 /**
@@ -38,8 +51,11 @@ const postUser = async (data: User): Promise<User> => {
  */
 const deleteUser = async (id: string | undefined): Promise<void> => {
   await deleteByUserId(id);
+  // const userRepo = getRepository(User);
+  // const deletedRes = await userRepo.delete(id)
   const idNum = users.findIndex((user) => user.id === id);
   users.splice(idNum, 1);
+  // if (deletedRes.affected)
 };
 
 /**
