@@ -8,6 +8,6 @@ export class Columns extends BaseEntity {
   @Column('varchar', { length: 30 })
   title: string = '';
 
-  @Column('varchar', { length: 20 })
+  @Column('integer')
   order: number = 0;
 }

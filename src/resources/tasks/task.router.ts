@@ -1,4 +1,5 @@
 import express, { NextFunction } from 'express';
+import { ITaskRequest } from '../../utils/types';
 // import { Task } from '../entities/task';
 import * as taskService from './task.service';
 
@@ -51,9 +52,10 @@ router
   .post(
     async (req: express.Request, res: express.Response, next: NextFunction) => {
       try {
-        const { boardid } = req.params;
-        if (boardid !== undefined) {
-          const data = { ...req.body, boardId: boardid };
+        const boardId: string | undefined = req.params['boardid'];
+        const reqBody: ITaskRequest = { ...req.body, boardId };
+        if (boardId !== undefined) {
+          const data = { ...reqBody };
           const task = await taskService.createTask(data);
           res.status(201).json(task);
           res.statusMessage = 'Task successfully created';

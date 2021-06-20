@@ -3,9 +3,6 @@ import { User } from '../entities/user';
 import { getRepository } from 'typeorm';
 import { deleteByUserId } from '../tasks/task.service';
 
-// type toResp = Promise<Omit<User, 'password'> | undefined>;
-
-// const users: User[] = [];
 /**
  * Return array of all users
  * @returns {Promise<User[]>}
@@ -23,9 +20,6 @@ const getAll = async (): Promise<User[] | undefined> => {
  */
 const getById = async (id: string | undefined): Promise<User | undefined> => {
   const userRepo = getRepository(User);
-  // const res: User | undefined = await userRepo.findOne(id);
-  // if (res !== undefined) return res;
-  // return undefined;
   return userRepo.findOne(id);
 };
 
@@ -41,7 +35,6 @@ const postUser = async (data: IUserResp): Promise<User | undefined> => {
   const savedUser = userRepo.save(newUser);
 
   return userRepo.findOne((await savedUser).id);
-  // return savedUser;
 };
 
 /**
@@ -50,27 +43,14 @@ const postUser = async (data: IUserResp): Promise<User | undefined> => {
  * @returns {Promise<void>}
  * Return message about delete
  */
-const deleteUser = async (
-  id: string | undefined
-  // ): Promise<'deleted' | 'not_found'> => {
-): Promise<void> => {
+const deleteUser = async (id: string | undefined): Promise<void> => {
   await deleteByUserId(id);
   const userRepo = getRepository(User);
   const resp = userRepo.findOne(id);
   if (id === undefined || resp === undefined) {
-    // return 'not_found';
     return;
   }
-  // const deletedRes = await userRepo.delete(id);
   await userRepo.delete(id);
-  // return;
-  // const idNum = users.findIndex((user) => user.id === id);
-  // users.splice(idNum, 1);
-  // if (deletedRes.affected) {
-  //   // return 'deleted';
-  //   return ;
-  // }
-  // return 'not_found';
 };
 
 /**
@@ -89,19 +69,5 @@ const updateUser = async (
   if (resp === undefined || id == undefined) return undefined;
   const updUser = await userRepo.update(id, data);
   return updUser.raw;
-
-  // const idNum = users.findIndex((user) => user.id === id);
-  // if ((idNum || idNum === 0) && id) {
-  //   const udpUsr = {
-  //     id,
-  //     name: data.name,
-  //     login: data.login,
-  //     password: data.password,
-  //   };
-  //   users.splice(idNum, 1, udpUsr);
-  //   const result = getById(id);
-  //   return result;
-  // }
-  // return undefined;
 };
 export { getAll, getById, postUser, deleteUser, updateUser };
