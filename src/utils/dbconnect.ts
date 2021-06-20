@@ -1,4 +1,4 @@
-import { ormconfig } from '../common/ormconfig';
+import ormconfig from '../common/ormconfig';
 import { Connection, createConnection, getConnection } from 'typeorm';
 
 const connectToDB = async () => {
@@ -14,6 +14,7 @@ const connectToDB = async () => {
     if (connection) {
       if (!connection.isConnected) {
         await connection.connect();
+        await connection.runMigrations();
         console.log('connection.name');
       } else {
         console.log('Connection exist');

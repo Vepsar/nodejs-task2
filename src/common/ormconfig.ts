@@ -8,9 +8,9 @@ dotenv.config({
   path: directory,
 });
 
-export const ormconfig = {
+const ormconfig = {
   type: 'postgres',
-  synchronize: true, // test obj
+  synchronize: false,
   host: process.env['POSTGRES_HOST'],
   port: process.env['POSTGRES_PORT'],
   username: process.env['POSTGRES_USER'],
@@ -19,5 +19,13 @@ export const ormconfig = {
   autoReconnect: true,
   reconnectTries: Number.MAX_VALUE,
   reconnectionInterval: 1000,
+  migrationsRun: true,
+  // migrationsTableName: 'custom_migration_table',
   entities: ['src/resources/entities/**/*.ts'],
+  migrations: ['src/common/migrations/**/*.ts'],
+  cli: {
+    migrationsDir: 'src/common/migrations',
+  },
 } as ConnectionOptions;
+
+export = ormconfig;
