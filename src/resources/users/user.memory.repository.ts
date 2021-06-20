@@ -1,18 +1,18 @@
-import { IUserRequest } from './user.model';
-import { deleteByUserId } from '../tasks/task.service';
-import { User } from '../entities/user.entity';
+import { IUserRequest, IUserResp } from '../../utils/types';
+import { User } from '../entities/user';
 import { getRepository } from 'typeorm';
+import { deleteByUserId } from '../tasks/task.service';
 
-const users: User[] = [];
+// type toResp = Promise<Omit<User, 'password'> | undefined>;
 
+// const users: User[] = [];
 /**
  * Return array of all users
  * @returns {Promise<User[]>}
  */
-const getAll = async (): Promise<User[]> => {
+const getAll = async (): Promise<User[] | undefined> => {
   const userRepo = getRepository(User);
-  return userRepo.find({ where: {} });
-  // return users
+  return await userRepo.find({ where: {} });
 };
 
 /**
@@ -23,10 +23,10 @@ const getAll = async (): Promise<User[]> => {
  */
 const getById = async (id: string | undefined): Promise<User | undefined> => {
   const userRepo = getRepository(User);
-  const res: User | undefined = await userRepo.findOne(id);
-  // const res: User = users.find((user) => user.id === id) as User;
-  if (res === undefined) return undefined;
-  return res;
+  // const res: User | undefined = await userRepo.findOne(id);
+  // if (res !== undefined) return res;
+  // return undefined;
+  return userRepo.findOne(id);
 };
 
 /**
@@ -35,12 +35,13 @@ const getById = async (id: string | undefined): Promise<User | undefined> => {
  * @returns {Promise<User>}
  * Return created User
  */
-const postUser = async (data: User): Promise<User> => {
+const postUser = async (data: IUserResp): Promise<User | undefined> => {
   const userRepo = getRepository(User);
   const newUser = userRepo.create(data);
   const savedUser = userRepo.save(newUser);
-  // users.push(data);
-  return savedUser;
+
+  return userRepo.findOne((await savedUser).id);
+  // return savedUser;
 };
 
 /**
@@ -49,13 +50,27 @@ const postUser = async (data: User): Promise<User> => {
  * @returns {Promise<void>}
  * Return message about delete
  */
-const deleteUser = async (id: string | undefined): Promise<void> => {
+const deleteUser = async (
+  id: string | undefined
+  // ): Promise<'deleted' | 'not_found'> => {
+): Promise<void> => {
   await deleteByUserId(id);
-  // const userRepo = getRepository(User);
-  // const deletedRes = await userRepo.delete(id)
-  const idNum = users.findIndex((user) => user.id === id);
-  users.splice(idNum, 1);
-  // if (deletedRes.affected)
+  const userRepo = getRepository(User);
+  const resp = userRepo.findOne(id);
+  if (id === undefined || resp === undefined) {
+    // return 'not_found';
+    return;
+  }
+  // const deletedRes = await userRepo.delete(id);
+  await userRepo.delete(id);
+  // return;
+  // const idNum = users.findIndex((user) => user.id === id);
+  // users.splice(idNum, 1);
+  // if (deletedRes.affected) {
+  //   // return 'deleted';
+  //   return ;
+  // }
+  // return 'not_found';
 };
 
 /**
@@ -69,19 +84,24 @@ const updateUser = async (
   id: string | undefined,
   data: IUserRequest
 ): Promise<User | undefined> => {
-  const idNum = users.findIndex((user) => user.id === id);
-  if ((idNum || idNum === 0) && id) {
-    const udpUsr = {
-      id,
-      name: data.name,
-      login: data.login,
-      password: data.password,
-    };
-    users.splice(idNum, 1, udpUsr);
-    const result = getById(id);
-    return result;
-  }
-  return undefined;
-};
+  const userRepo = getRepository(User);
+  const resp = await userRepo.findOne(id);
+  if (resp === undefined || id == undefined) return undefined;
+  const updUser = await userRepo.update(id, data);
+  return updUser.raw;
 
+  // const idNum = users.findIndex((user) => user.id === id);
+  // if ((idNum || idNum === 0) && id) {
+  //   const udpUsr = {
+  //     id,
+  //     name: data.name,
+  //     login: data.login,
+  //     password: data.password,
+  //   };
+  //   users.splice(idNum, 1, udpUsr);
+  //   const result = getById(id);
+  //   return result;
+  // }
+  // return undefined;
+};
 export { getAll, getById, postUser, deleteUser, updateUser };

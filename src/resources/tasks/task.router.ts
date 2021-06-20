@@ -1,5 +1,5 @@
 import express, { NextFunction } from 'express';
-import Task from './task.model';
+// import { Task } from '../entities/task';
 import * as taskService from './task.service';
 
 const router = express.Router({ mergeParams: true });
@@ -35,6 +35,7 @@ router
         if (task === undefined) {
           res.status(404);
           res.statusMessage = 'Task ERROR: Task Not Found';
+          console.error();
         } else {
           res.status(200).json(task);
         }
@@ -51,10 +52,12 @@ router
     async (req: express.Request, res: express.Response, next: NextFunction) => {
       try {
         const { boardid } = req.params;
-        const data = new Task({ ...req.body, boardId: boardid });
-        const task = await taskService.createTask(data);
-        res.status(201).json(task);
-        res.statusMessage = 'Task successfully created';
+        if (boardid !== undefined) {
+          const data = { ...req.body, boardId: boardid };
+          const task = await taskService.createTask(data);
+          res.status(201).json(task);
+          res.statusMessage = 'Task successfully created';
+        }
         next();
       } catch (err) {
         next(err);

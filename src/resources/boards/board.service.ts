@@ -1,5 +1,6 @@
 import * as boardRepo from './board.mem.repo';
-import Board, { IBoardRequest } from './board.model';
+import { IBoardRequest } from '../../utils/types';
+import { Board } from '../entities/board';
 /**
  * Service to get all boards
  * @returns {Promise<Board[]>}
@@ -19,7 +20,7 @@ const getBoardById = (id: string): Promise<Board | undefined> =>
  * @param {Board} data - board's data
  * @returns {Promise<Board>}
  */
-const createBoard = (data: Board): Promise<Board> =>
+const createBoard = (data: Board): Promise<Board | undefined> =>
   boardRepo.createBoard(data);
 
 /**

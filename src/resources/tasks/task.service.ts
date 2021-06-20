@@ -1,5 +1,6 @@
 import * as taskRepo from './task.mem.repo';
-import Task, { ITaskRequest } from './task.model';
+import { Task } from '../entities/task';
+import { ITaskRequest } from '../../utils/types';
 
 /**
  * Service for getting all tasks by the board ID
@@ -25,7 +26,8 @@ const getTaskById = (
  * @param {Task} data - object with new task
  * @returns {Promise<Task>} - return created task
  */
-const createTask = (data: Task): Promise<Task> => taskRepo.createTask(data);
+const createTask = (data: ITaskRequest): Promise<Task | undefined> =>
+  taskRepo.createTask(data);
 
 /**
  * Service for updating tasks

@@ -1,11 +1,12 @@
 import * as usersRepo from './user.memory.repository';
-import User, { IUserRequest } from './user.model';
+// import User, { IUserRequest } from './user.model';
+import { User } from '../entities/user';
+import { IUserRequest } from '../../utils/types';
 /**
  * Service for getting all users
  * @returns {Promise<User[]>}
  */
-const getAll = (): Promise<User[]> => usersRepo.getAll();
-
+const getAll = (): Promise<User[] | undefined> => usersRepo.getAll();
 /**
  * Service for getting user by ID
  * @param {String} id - user ID
@@ -20,12 +21,14 @@ const getById = (id: string | undefined): Promise<User | undefined> =>
  * @returns {Promise<User>}
  * Return created user
  */
-const postUser = (user: User): Promise<User> => usersRepo.postUser(user);
+const postUser = (user: User): Promise<User | undefined> =>
+  usersRepo.postUser(user);
 
 /**
  * Deleting user by his ID
  * @param {String} id - ID of removing user
  */
+// const deleteUser = (id: string | undefined): Promise<'deleted' | 'not_found'> =>
 const deleteUser = (id: string | undefined): Promise<void> =>
   usersRepo.deleteUser(id);
 

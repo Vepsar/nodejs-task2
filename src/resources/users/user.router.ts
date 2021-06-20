@@ -1,5 +1,6 @@
 import express, { NextFunction } from 'express';
-import User from './user.model';
+// import User from './user.model';
+// import { User } from '../entities/user';
 import * as usersService from './user.service';
 
 const router = express.Router({ mergeParams: true });
@@ -14,13 +15,25 @@ router
     ) => {
       try {
         const users = await usersService.getAll();
-        res.json(users.map(User.toResponse)).status(200);
+        res.json(users /*.map(User.toResponse)*/).status(200);
         res.statusMessage = 'OK';
       } catch (err) {
         next(err);
       }
     }
   );
+
+// router.route('/').get(
+//   async (_req: express.Request, res: express.Response): Promise<void> => {
+//     try {
+//       const user = await getRepository(User).find();
+//       res.json(user);
+//     } catch (err) {
+//       console.error(err.message);
+//       res.status(404).send();
+//     }
+//   }
+// );
 
 router
   .route('/:id')
@@ -34,7 +47,7 @@ router
           res.statusMessage = 'User ERROR: user not found';
         } else {
           // throw new Error('oops');
-          res.status(200).json(User.toResponse(user)).send();
+          res.status(200).json(user /*.toResponse(user)*/).send();
           res.statusMessage = 'OK';
         }
         next();
@@ -49,9 +62,13 @@ router
   .post(
     async (req: express.Request, res: express.Response, next: NextFunction) => {
       try {
-        const data = new User({ ...req.body });
+        // const data = new User({ ...req.body });
+        const data = { ...req.body };
         const newUser = await usersService.postUser(data);
-        res.status(201).json(User.toResponse(newUser));
+        // console.log(newUser);
+
+        // res.status(201).json(User.toResponse(newUser));
+        res.status(201).json(newUser);
         res.statusMessage = 'User created';
         next();
       } catch (err) {
@@ -87,7 +104,8 @@ router.route('/:id').put(
       const data = { ...req.body };
       const updUser = await usersService.updateUser(id, data);
       if (updUser !== undefined) {
-        res.status(200).json(User.toResponse(updUser));
+        // res.status(200).json(User.toResponse(updUser));
+        res.status(200).json(updUser);
         res.statusMessage = 'User was updated succesfully';
       } else {
         res.status(404).send();

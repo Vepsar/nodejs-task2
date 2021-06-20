@@ -1,0 +1,70 @@
+Error №1
+Time: Sun, 20.Jun.21  20:44:24
+Type: Unhandled Rejection
+Error message: QueryFailedError: значение NULL в столбце "userId" отношения "task" нарушает ограничение NOT NULL
+
+Error №1
+Time: Sun, 20.Jun.21  20:44:24
+Type: Unhandled Rejection
+Error message: QueryFailedError: значение NULL в столбце "userId" отношения "task" нарушает ограничение NOT NULL
+
+Error №1
+Time: Sun, 20.Jun.21  20:44:24
+Status: 404
+Error message: Board ERROR: Board not found
+
+Error №2
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №3
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №4
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №5
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №6
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №7
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №8
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №9
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №10
+Time: Sun, 20.Jun.21  20:44:24
+Type: Unhandled Rejection
+Error message: QueryFailedError: неверный синтаксис для типа uuid: "undefined"
+
+Error №10
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+
+Error №11
+Time: Sun, 20.Jun.21  20:44:24
+Status: 500
+Error message: Internal Server Error
+

@@ -4,7 +4,7 @@ import { Connection, createConnection, getConnection } from 'typeorm';
 const connectToDB = async () => {
   let connection: Connection | undefined = await createConnection(ormconfig);
   try {
-    connection = getConnection('task-connect');
+    connection = getConnection();
   } catch (err) {
     if (err) {
       console.error(err);
@@ -14,11 +14,12 @@ const connectToDB = async () => {
     if (connection) {
       if (!connection.isConnected) {
         await connection.connect();
+        console.log('connection.name');
       } else {
         console.log('Connection exist');
       }
-      console.log('Connection done well');
     }
+    console.log('Connection done well');
   } catch (err) {
     console.log('SMTH go wrong');
     if (err) {

@@ -1,5 +1,5 @@
 import express, { NextFunction } from 'express';
-import Board from './board.model';
+// import { Board } from '../entities/board';
 import * as boardService from './board.service';
 
 const router = express.Router({ mergeParams: true });
@@ -46,7 +46,7 @@ router
   .route('/')
   .post(
     async (req: express.Request, res: express.Response, next: NextFunction) => {
-      const data = new Board({ ...req.body });
+      const data = { ...req.body };
       const board = await boardService.createBoard(data);
       res.status(201).json(board);
       res.statusMessage = 'Board created';

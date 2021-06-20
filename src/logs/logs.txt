@@ -1,0 +1,252 @@
+Log №1
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /users
+Params: undefined
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+Status: 201 User created
+
+Log №2
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /users/fd3609cd-2d51-48d7-9baf-8333a91d28c8
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №3
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /users/fd3609cd-2d51-48d7-9baf-8333a91d28c8
+Params: undefined
+Body: {}
+Status: 204 User was deleted
+
+Log №4
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /users
+Params: undefined
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+Status: 201 User created
+
+Log №5
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /users/d3b2a9fb-0d4e-478d-98e6-5f960d223f4f
+Params: undefined
+Body: {}
+Status: 204 User was deleted
+
+Log №6
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /users
+Params: undefined
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+Status: 201 User created
+
+Log №7
+Time: Sun, 20.Jun.21  20:44:24
+Method: PUT URL: /users/84def023-340d-49d3-a593-e296786d46f3
+Params: undefined
+Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"84def023-340d-49d3-a593-e296786d46f3"}
+Status: 200 User was updated succesfully
+
+Log №8
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /users/84def023-340d-49d3-a593-e296786d46f3
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №9
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /users/84def023-340d-49d3-a593-e296786d46f3
+Params: undefined
+Body: {}
+Status: 204 User was deleted
+
+Log №10
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /users
+Params: undefined
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+Status: 201 User created
+
+Log №11
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /users/72ad05f8-ddd0-4f8d-837b-8384a5fab959
+Params: undefined
+Body: {}
+Status: 204 User was deleted
+
+Log №12
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /users
+Params: undefined
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+Status: 201 User created
+
+Log №13
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №14
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards/445c071a-d86b-45e1-a570-486062ae6d26/tasks
+Params: undefined
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"62be594a-8d39-4614-8a32-211268b5165a","boardId":"445c071a-d86b-45e1-a570-486062ae6d26"}
+Status: 201 Task successfully created
+
+Log №15
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards/445c071a-d86b-45e1-a570-486062ae6d26/tasks
+Params: undefined
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"62be594a-8d39-4614-8a32-211268b5165a","boardId":"445c071a-d86b-45e1-a570-486062ae6d26"}
+Status: 201 Task successfully created
+
+Log №16
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /users/62be594a-8d39-4614-8a32-211268b5165a
+Params: undefined
+Body: {}
+Status: 204 User was deleted
+
+Log №17
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards/445c071a-d86b-45e1-a570-486062ae6d26/tasks/11594cef-2ab9-476a-bc23-e3aa5f2e101e
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №18
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №19
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №20
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №21
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards/19bebb2d-a7eb-425b-bd7a-0b92f31672ca
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №22
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №23
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /boards/cbf9e828-d056-4ecb-b58d-4c7c141be167
+Params: undefined
+Body: {}
+Status: 204 Board was succesfully deleted
+
+Log №24
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №25
+Time: Sun, 20.Jun.21  20:44:24
+Method: PUT URL: /boards/931de058-b872-495f-8255-7b04ddb8cc8f
+Params: undefined
+Body: {"title":"Autotest updated board","id":"931de058-b872-495f-8255-7b04ddb8cc8f","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 200 Board was succesfully updated
+
+Log №26
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards/931de058-b872-495f-8255-7b04ddb8cc8f
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №27
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /boards/931de058-b872-495f-8255-7b04ddb8cc8f
+Params: undefined
+Body: {}
+Status: 204 Board was succesfully deleted
+
+Log №28
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №29
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /boards/d1bc86b0-6928-4db1-a083-10019237054f
+Params: undefined
+Body: {}
+Status: 204 Board was succesfully deleted
+
+Log №30
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards/d1bc86b0-6928-4db1-a083-10019237054f
+Params: undefined
+Body: {}
+Status: 404 Board ERROR: Board not found
+
+Log №31
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №32
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /boards/19bebb2d-a7eb-425b-bd7a-0b92f31672ca
+Params: undefined
+Body: {}
+Status: 204 Board was succesfully deleted
+
+Log №33
+Time: Sun, 20.Jun.21  20:44:24
+Method: POST URL: /boards
+Params: undefined
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Status: 201 Board created
+
+Log №34
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards/36416165-4720-45be-b7a1-65b0ff3d5da9/tasks
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №35
+Time: Sun, 20.Jun.21  20:44:24
+Method: GET URL: /boards/36416165-4720-45be-b7a1-65b0ff3d5da9/tasks
+Params: undefined
+Body: {}
+Status: 200 OK
+
+Log №36
+Time: Sun, 20.Jun.21  20:44:24
+Method: DELETE URL: /boards/36416165-4720-45be-b7a1-65b0ff3d5da9
+Params: undefined
+Body: {}
+Status: 204 Board was succesfully deleted
+

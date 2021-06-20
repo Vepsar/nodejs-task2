@@ -1,13 +1,19 @@
-import Task, { ITaskRequest } from './task.model';
+import { Task } from '../entities/task';
+import { ITaskRequest } from '../../utils/types';
+import { getRepository } from 'typeorm';
 
-const tasks: Task[] = [];
+// const tasks: Task[] = [];
 /**
  * Return all tasks by providing board ID or empty no-zero-length array if tasks has no exsist
  * @param {String} id - board's ID
  * @returns {Promise<Task[]>}
  */
-const getAllTasks = async (id: string | undefined): Promise<Task[]> =>
-  tasks.filter((task) => task.boardId === id);
+const getAllTasks = async (id: string | undefined): Promise<Task[]> => {
+  const taskRepo = getRepository(Task);
+  return taskRepo.find({ where: { boardId: `${id}` } });
+};
+
+// tasks.filter((task) => task.boardId === id);
 
 /**
  * Return task from the board by providing board's ID and task ID
@@ -18,17 +24,31 @@ const getAllTasks = async (id: string | undefined): Promise<Task[]> =>
 const getTaskById = async (
   boardid: string | undefined,
   taskid: string | undefined
-): Promise<Task | undefined> =>
-  tasks.find((task) => task.boardId === boardid && task.id === taskid);
+): Promise<Task | undefined> => {
+  const taskRepo = getRepository(Task);
+  if (taskid === undefined || boardid === undefined) {
+    return undefined;
+  }
+  const resp = await taskRepo.findOne({
+    where: { id: taskid, boardId: boardid },
+  });
+  // if (resp === undefined) return undefined;
+  return resp;
+};
+// tasks.find((task) => task.boardId === boardid && task.id === taskid);
 
 /**
  * Creating task from the reciving data
  * @param {Task} data - data of new task
  * @returns {Promise<Task>} - return created task
  */
-const createTask = async (data: Task): Promise<Task> => {
-  tasks.push(data);
-  return data;
+const createTask = async (data: ITaskRequest): Promise<Task | undefined> => {
+  const taskRepo = getRepository(Task);
+  const newTask = taskRepo.create(data);
+  const savedTask = await taskRepo.save(newTask);
+  return taskRepo.findOne(savedTask.id);
+  // tasks.push(data);
+  // return data;
 };
 
 /**
@@ -43,22 +63,32 @@ const updateTask = async (
   taskid: string | undefined,
   data: ITaskRequest
 ): Promise<Task | undefined> => {
-  const idNum = tasks.findIndex((task) => task.id === taskid);
-  if (typeof taskid === 'string' && typeof boardid === 'string') {
-    const updTask = {
-      id: taskid,
-      title: data.title,
-      order: data.order,
-      description: data.description,
-      userId: data.userId,
-      boardId: boardid,
-      columnId: data.columnId,
-    };
-
-    tasks.splice(idNum, 1, updTask);
-    return tasks.find((task) => task.boardId === boardid && task.id === taskid);
+  const taskRepo = getRepository(Task);
+  const resp = taskRepo.findOne(taskid);
+  if (taskid === undefined || boardid === undefined || resp === undefined) {
+    return undefined;
   }
-  return undefined;
+  const updTask = await taskRepo.update(taskid, data);
+  return updTask.raw;
+
+  // const idNum = tasks.findIndex((task) => task.id === taskid);
+  // if (typeof taskid === 'string' && typeof boardid === 'string') {
+  //   const updTask = {
+  //     id: taskid,
+  //     title: data.title,
+  //     order: data.order,
+  //     description: data.description,
+  //     userId: data.userId,
+  //     boardId: boardid,
+  //     columnId: data.columnId,
+  //   };
+
+  //   // tasks.splice(idNum, 1, updTask);
+  //   console.log(updTask, idNum);
+
+  //   return tasks.find((task) => task.boardId === boardid && task.id === taskid);
+  // }
+  // return undefined;
 };
 
 /**
@@ -66,8 +96,10 @@ const updateTask = async (
  * @param {String} taskid - ID of task that need to delete
  */
 const deleteTask = async (taskid: string | undefined): Promise<void> => {
-  const idNum = tasks.findIndex((task) => task.id === taskid);
-  tasks.splice(idNum, 1);
+  console.log(taskid);
+
+  // const idNum = tasks.findIndex((task) => task.id === taskid);
+  // tasks.splice(idNum, 1);
 };
 
 /**
@@ -75,10 +107,18 @@ const deleteTask = async (taskid: string | undefined): Promise<void> => {
  * @param {String} userid - ID of deleted user
  */
 const deleteByUserId = async (userid: string | undefined): Promise<void> => {
-  tasks.forEach((task) => {
-    if (task.userId === userid) {
-      Object.assign(task, { userId: null });
-    }
+  const taskRepo = getRepository(Task);
+  const tasks = await taskRepo.find({ where: { userId: userid } });
+  if (tasks === undefined) {
+    return undefined;
+  }
+  // tasks.forEach((task) => {
+  //   if (task.userId === userid) {
+  //     Object.assign(task, { userId: null });
+  //   }
+  // });
+  tasks.forEach((task: Task) => {
+    if (task.id !== undefined) taskRepo.update(task.id, { userId: undefined });
   });
 };
 

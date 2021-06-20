@@ -10,7 +10,6 @@ dotenv.config({
 
 export const ormconfig = {
   type: 'postgres',
-  name: process.env['POSTGRES_NAME'],
   synchronize: true, // test obj
   host: process.env['POSTGRES_HOST'],
   port: process.env['POSTGRES_PORT'],
@@ -18,7 +17,7 @@ export const ormconfig = {
   password: process.env['POSTGRES_PASSWORD'],
   database: process.env['POSTGRESS_DB'],
   autoReconnect: true,
-  reconnectTries: 100,
+  reconnectTries: Number.MAX_VALUE,
   reconnectionInterval: 1000,
-  entities: ['../resources/entities/**/*.ts'],
+  entities: ['src/resources/entities/**/*.ts'],
 } as ConnectionOptions;

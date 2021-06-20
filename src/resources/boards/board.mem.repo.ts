@@ -1,8 +1,10 @@
-import Board, { IBoardRequest } from './board.model';
+import { IBoardRequest } from '../../utils/types';
 import { getAllTasks, deleteTask } from '../tasks/task.service';
-import Task from '../tasks/task.model';
+import { Task } from '../entities/task';
+import { Board } from '../entities/board';
+import { getRepository } from 'typeorm';
 
-const boards: Board[] = [];
+// const boards: Board[] = [];
 
 /**
  * Function for return Array of all boards in DB
@@ -10,7 +12,11 @@ const boards: Board[] = [];
  * Return array of all boards from the DB
  */
 
-const getAllBoards = async (): Promise<Board[]> => boards;
+const getAllBoards = async (): Promise<Board[]> => {
+  const boardRepo = getRepository(Board);
+  return await boardRepo.find({ where: {} });
+};
+// boards;
 
 /**
  * Get id of the board and return this board when it exsist as the Object
@@ -18,8 +24,11 @@ const getAllBoards = async (): Promise<Board[]> => boards;
  * @returns {Promise<Board|undefined>}
  * Return Object by class Board
  */
-const getBoardById = async (id: string): Promise<Board | undefined> =>
-  boards.find((board) => board.id === id);
+const getBoardById = async (id: string): Promise<Board | undefined> => {
+  const boardRepo = getRepository(Board);
+  return await boardRepo.findOne(id);
+};
+// boards.find((board) => board.id === id);
 
 /**
  * Create board in DB from the receiving data
@@ -28,9 +37,13 @@ const getBoardById = async (id: string): Promise<Board | undefined> =>
  * return created Object
  */
 
-const createBoard = async (data: Board): Promise<Board> => {
-  boards.push(data);
-  return data;
+const createBoard = async (data: IBoardRequest): Promise<Board | undefined> => {
+  const boardRepo = getRepository(Board);
+  const newBoard = boardRepo.create(data);
+  const savedBoard = boardRepo.save(newBoard);
+  return boardRepo.findOne((await savedBoard).id);
+  // boards.push(data);
+  // return data;
 };
 
 /**
@@ -45,17 +58,22 @@ const updateBoard = async (
   id: string | undefined,
   data: IBoardRequest
 ): Promise<Board | undefined> => {
-  const idNum = boards.findIndex((board) => board.id === id);
-  if (idNum !== undefined && typeof id === 'string') {
-    const updBrd = {
-      id,
-      title: data.title,
-      columns: data.columns,
-    };
-    boards.splice(idNum, 1, updBrd);
-    return boards.find((board) => board.id === id);
-  }
-  return undefined;
+  const boardRepo = getRepository(Board);
+  const resp = await boardRepo.findOne(id);
+  if (resp === undefined || id == undefined) return undefined;
+  const updBoard = await boardRepo.update(id, data);
+  return updBoard.raw;
+  // const idNum = boards.findIndex((board) => board.id === id);
+  // if (idNum !== undefined && typeof id === 'string') {
+  //   const updBrd = {
+  //     id,
+  //     title: data.title,
+  //     columns: data.columns,
+  //   };
+  //   boards.splice(idNum, 1, updBrd);
+  //   return boards.find((board) => board.id === id);
+  // }
+  // return undefined;
 };
 
 /**
@@ -65,15 +83,23 @@ const updateBoard = async (
 
 const deleteBoard = async (id: string | undefined): Promise<void> => {
   const tasksid = await getAllTasks(id);
-  Promise.all(
-    tasksid.map(
-      async (task: Task): Promise<void> => {
-        await deleteTask(task.id);
-      }
-    )
-  );
-  const idNum = boards.findIndex((board) => board.id === id);
-  boards.splice(idNum, 1);
+  if (tasksid !== undefined)
+    Promise.all(
+      tasksid.map(
+        async (task: Task): Promise<void> => {
+          await deleteTask(task.id);
+        }
+      )
+    );
+  const boardRepo = getRepository(Board);
+  const resp = boardRepo.findOne(id);
+  if (resp === undefined || id === undefined) {
+    return;
+  }
+  await boardRepo.delete(id);
+
+  // const idNum = boards.findIndex((board) => board.id === id);
+  // boards.splice(idNum, 1);
 };
 
 export { getAllBoards, getBoardById, createBoard, deleteBoard, updateBoard };

@@ -22,13 +22,11 @@ const logger = (
     if (err) {
       next(err);
     }
-    const log = `Log №${counter}\nTime: ${time}\nMethod: ${
-      req.method
-    } URL: ${req.url}\nParams: ${JSON.stringify(
-      req.params
-    )}\nBody: ${JSON.stringify(req.body)}\nStatus: ${res.statusCode} ${
-      res.statusMessage
-    }\n\n`;
+    const log = `Log №${counter}\nTime: ${time}\nMethod: ${req.method} URL: ${
+      req.url
+    }\nParams: ${JSON.stringify(req.params)}\nBody: ${JSON.stringify(
+      req.body
+    )}\nStatus: ${res.statusCode} ${res.statusMessage}\n\n`;
     fs.appendFile(
       path.dirname(__dirname) + `/logs/logs.txt`,
       log,
@@ -39,7 +37,7 @@ const logger = (
       }
     );
     counter += 1;
-    process.stdout.write(log);
+    // process.stdout.write(log);
   });
   next();
 };
@@ -81,7 +79,7 @@ const errorDefLogger = (
           }
         );
         errcount += 1;
-        process.stdout.write(errlog);
+        // process.stdout.write(errlog);
       });
     }
   }
@@ -108,7 +106,7 @@ const errLogger = (
       }
     );
     errcount += 1;
-    process.stdout.write(stnderr);
+    // process.stdout.write(stnderr);
     next();
   }
 };
@@ -127,7 +125,7 @@ const uncaughtExceptionHandler = (err: Error, origin: string): void => {
     }
   );
   errcount += 1;
-  process.stdout.write(stnderr);
+  // process.stdout.write(stnderr);
 };
 
 const unhandledRejectionHandler = (
@@ -146,7 +144,7 @@ const unhandledRejectionHandler = (
       }
     }
   );
-  process.stdout.write(stnderr);
+  // process.stdout.write(stnderr);
 };
 
 export {
