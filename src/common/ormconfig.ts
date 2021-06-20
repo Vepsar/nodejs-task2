@@ -10,7 +10,7 @@ dotenv.config({
 
 const ormconfig = {
   type: 'postgres',
-  synchronize: false,
+  synchronize: true,
   host: process.env['POSTGRES_HOST'],
   port: process.env['POSTGRES_PORT'],
   username: process.env['POSTGRES_USER'],
