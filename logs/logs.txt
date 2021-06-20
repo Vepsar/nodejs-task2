@@ -1,461 +1,461 @@
 Log №1
-Time: Sun, 20.Jun.21  20:14:12
+Time: Sun, 20.Jun.21  20:47:53
 Method: POST URL: /users
 Params: undefined
 Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
 Status: 201 User created
 
 Log №2
-Time: Sun, 20.Jun.21  20:14:12
-Method: GET URL: /users/3120338b-7eeb-4bc7-a323-c06165de2f8d
+Time: Sun, 20.Jun.21  20:47:53
+Method: GET URL: /users/aae81dd6-9e1b-4569-a084-6c951aafac7f
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №3
-Time: Sun, 20.Jun.21  20:14:12
-Method: DELETE URL: /users/3120338b-7eeb-4bc7-a323-c06165de2f8d
+Time: Sun, 20.Jun.21  20:47:53
+Method: DELETE URL: /users/aae81dd6-9e1b-4569-a084-6c951aafac7f
 Params: undefined
 Body: {}
 Status: 204 User was deleted
 
 Log №4
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /users
 Params: undefined
 Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
 Status: 201 User created
 
 Log №5
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /users/09f64aa9-40d1-4a7c-8e50-ba1e16585ba2
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /users/73b5fd37-5fd7-4f50-9acb-3e279a654256
 Params: undefined
 Body: {}
 Status: 204 User was deleted
 
 Log №6
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /users
 Params: undefined
 Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
 Status: 201 User created
 
 Log №7
-Time: Sun, 20.Jun.21  20:14:13
-Method: PUT URL: /users/7e18d500-227e-481e-9a12-59c0c9c28d76
+Time: Sun, 20.Jun.21  20:47:54
+Method: PUT URL: /users/23b8edee-04b3-4d16-ac2e-61b66f4ac908
 Params: undefined
-Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"7e18d500-227e-481e-9a12-59c0c9c28d76"}
+Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"23b8edee-04b3-4d16-ac2e-61b66f4ac908"}
 Status: 200 User was updated succesfully
 
 Log №8
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /users/7e18d500-227e-481e-9a12-59c0c9c28d76
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /users/23b8edee-04b3-4d16-ac2e-61b66f4ac908
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №9
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /users/7e18d500-227e-481e-9a12-59c0c9c28d76
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /users/23b8edee-04b3-4d16-ac2e-61b66f4ac908
 Params: undefined
 Body: {}
 Status: 204 User was deleted
 
 Log №10
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /users
 Params: undefined
 Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
 Status: 201 User created
 
 Log №11
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /users/4292814a-bd2a-41b1-94ba-591a7954cbec
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /users/9049d347-7214-481d-a9fc-81c10d07a25a
 Params: undefined
 Body: {}
 Status: 204 User was deleted
 
 Log №12
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /users
 Params: undefined
 Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
 Status: 201 User created
 
 Log №13
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №14
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4/tasks
 Params: undefined
-Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"fa7ae076-e0ae-4327-b7f0-98ba877ac2b0","boardId":"c1f6f9c9-65da-4f47-ad12-2ac71360a7f4"}
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"16c65b24-ad66-44a4-b17b-de377b759dc4","boardId":"7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4"}
 Status: 201 Task successfully created
 
 Log №15
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4/tasks
 Params: undefined
-Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"fa7ae076-e0ae-4327-b7f0-98ba877ac2b0","boardId":"c1f6f9c9-65da-4f47-ad12-2ac71360a7f4"}
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"16c65b24-ad66-44a4-b17b-de377b759dc4","boardId":"7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4"}
 Status: 201 Task successfully created
 
 Log №16
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /users/fa7ae076-e0ae-4327-b7f0-98ba877ac2b0
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /users/16c65b24-ad66-44a4-b17b-de377b759dc4
 Params: undefined
 Body: {}
 Status: 204 User was deleted
 
 Log №17
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4/tasks/d5c7b808-b150-41da-b313-921f80015f7d
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4/tasks/d4787a84-cac3-4ac2-96e7-4be8e0df077d
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №18
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4/tasks/d6d04bae-192d-45db-8662-41cc42250d69
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4/tasks/d46bbe3d-a372-493a-8821-b48f4135650d
 Params: undefined
 Body: {}
 Status: 200 OK
 
-Log №19
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4/tasks/d5c7b808-b150-41da-b313-921f80015f7d
+Log №20
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4/tasks/d4787a84-cac3-4ac2-96e7-4be8e0df077d
 Params: undefined
 Body: {}
 Status: 204 Task was deleted
 
-Log №20
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4/tasks/d6d04bae-192d-45db-8662-41cc42250d69
+Log №19
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4/tasks/d46bbe3d-a372-493a-8821-b48f4135650d
 Params: undefined
 Body: {}
 Status: 204 Task was deleted
 
 Log №21
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/c1f6f9c9-65da-4f47-ad12-2ac71360a7f4
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/7cdc4db9-7cb0-4d40-a161-0f552bf1e5b4
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted
 
 Log №22
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №23
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: GET URL: /boards
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №24
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: GET URL: /boards
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №25
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/a9a3c09c-c11e-43b9-bacc-f1db7ef71330
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/7e54c026-d9cf-40a3-b081-6afa0de4608c
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №26
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №27
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/61ae6250-4dee-45a1-87f2-0ce1f0431c44
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/8a21b5c5-b840-4e10-81fc-0b73f228115e
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted
 
 Log №28
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №29
-Time: Sun, 20.Jun.21  20:14:13
-Method: PUT URL: /boards/f2336051-fd37-425a-a97d-38c8f7fb5451
+Time: Sun, 20.Jun.21  20:47:54
+Method: PUT URL: /boards/08108ab1-27b5-4268-bfb3-b1262212ccce
 Params: undefined
-Body: {"title":"Autotest updated board","id":"f2336051-fd37-425a-a97d-38c8f7fb5451","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+Body: {"title":"Autotest updated board","id":"08108ab1-27b5-4268-bfb3-b1262212ccce","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 200 Board was succesfully updated
 
 Log №30
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/f2336051-fd37-425a-a97d-38c8f7fb5451
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/08108ab1-27b5-4268-bfb3-b1262212ccce
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №31
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/f2336051-fd37-425a-a97d-38c8f7fb5451
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/08108ab1-27b5-4268-bfb3-b1262212ccce
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted
 
 Log №32
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №33
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/d2806cb8-0e1c-437e-b226-4e0ba448bfd1
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/f1e89384-29d0-470c-b87d-967681140a03
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted
 
 Log №34
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/d2806cb8-0e1c-437e-b226-4e0ba448bfd1
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/f1e89384-29d0-470c-b87d-967681140a03
 Params: undefined
 Body: {}
 Status: 404 Board ERROR: Board not found
 
 Log №35
-Time: Sun, 20.Jun.21  20:14:13
+Time: Sun, 20.Jun.21  20:47:54
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №36
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks
 Params: undefined
-Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"c3dba7e7-577c-4c7c-a73c-41afae3202a6","userId":null,"columnId":null}
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"50f04a90-21b3-481c-b123-b140d27cfc56","userId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №37
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks
 Params: undefined
-Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"c3dba7e7-577c-4c7c-a73c-41afae3202a6","userId":null,"columnId":null}
+Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"50f04a90-21b3-481c-b123-b140d27cfc56","userId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №38
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks
 Params: undefined
-Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"c3dba7e7-577c-4c7c-a73c-41afae3202a6","userId":null,"columnId":null}
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"50f04a90-21b3-481c-b123-b140d27cfc56","userId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №39
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks
 Params: undefined
-Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"c3dba7e7-577c-4c7c-a73c-41afae3202a6","userId":null,"columnId":null}
+Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"50f04a90-21b3-481c-b123-b140d27cfc56","userId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №40
-Time: Sun, 20.Jun.21  20:14:13
-Method: POST URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks
+Time: Sun, 20.Jun.21  20:47:54
+Method: POST URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks
 Params: undefined
-Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"c3dba7e7-577c-4c7c-a73c-41afae3202a6","userId":null,"columnId":null}
+Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"50f04a90-21b3-481c-b123-b140d27cfc56","userId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №41
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/2fbc6f37-c89a-4440-93ee-403d7da5e832
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/31a0c97f-b88e-4764-a61f-81d2129f628b
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №42
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/020792b0-e19f-4307-99b2-be1bbac5ddf0
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/fc5d1001-42d3-4e81-af6a-4322c7ce6797
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №43
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/4d13e8dc-97e0-4bd0-b33f-077143eca568
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/14ec1764-98d1-4dd7-a6bf-cb637d3419f4
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №44
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/6f5fddd6-8259-4512-8c98-73bc144a44a4
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/1f69d415-6825-40c4-91f8-a3bdff43fdd0
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №45
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/5769e979-8a38-4ba5-a776-f7241aed8fec
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/a40790f5-4044-4d68-a48e-1cf777005d93
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №46
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6
+Time: Sun, 20.Jun.21  20:47:54
+Method: DELETE URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted
 
 Log №47
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/6f5fddd6-8259-4512-8c98-73bc144a44a4
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/1f69d415-6825-40c4-91f8-a3bdff43fdd0
 Params: undefined
 Body: {}
 Status: 404 Task ERROR: Task Not Found
 
 Log №48
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/020792b0-e19f-4307-99b2-be1bbac5ddf0
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/14ec1764-98d1-4dd7-a6bf-cb637d3419f4
 Params: undefined
 Body: {}
 Status: 404 Task ERROR: Task Not Found
 
 Log №49
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/2fbc6f37-c89a-4440-93ee-403d7da5e832
+Time: Sun, 20.Jun.21  20:47:54
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/a40790f5-4044-4d68-a48e-1cf777005d93
 Params: undefined
 Body: {}
 Status: 404 Task ERROR: Task Not Found
 
 Log №50
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/4d13e8dc-97e0-4bd0-b33f-077143eca568
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/fc5d1001-42d3-4e81-af6a-4322c7ce6797
 Params: undefined
 Body: {}
 Status: 404 Task ERROR: Task Not Found
 
 Log №51
-Time: Sun, 20.Jun.21  20:14:13
-Method: GET URL: /boards/c3dba7e7-577c-4c7c-a73c-41afae3202a6/tasks/5769e979-8a38-4ba5-a776-f7241aed8fec
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/50f04a90-21b3-481c-b123-b140d27cfc56/tasks/31a0c97f-b88e-4764-a61f-81d2129f628b
 Params: undefined
 Body: {}
 Status: 404 Task ERROR: Task Not Found
 
 Log №52
-Time: Sun, 20.Jun.21  20:14:13
-Method: DELETE URL: /boards/a9a3c09c-c11e-43b9-bacc-f1db7ef71330
+Time: Sun, 20.Jun.21  20:47:55
+Method: DELETE URL: /boards/7e54c026-d9cf-40a3-b081-6afa0de4608c
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted
 
 Log №53
-Time: Sun, 20.Jun.21  20:14:14
+Time: Sun, 20.Jun.21  20:47:55
 Method: POST URL: /boards
 Params: undefined
 Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
 Status: 201 Board created
 
 Log №54
-Time: Sun, 20.Jun.21  20:14:14
-Method: POST URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks
+Time: Sun, 20.Jun.21  20:47:55
+Method: POST URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks
 Params: undefined
 Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №55
-Time: Sun, 20.Jun.21  20:14:14
-Method: GET URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №56
-Time: Sun, 20.Jun.21  20:14:14
-Method: GET URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №57
-Time: Sun, 20.Jun.21  20:14:14
-Method: GET URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/f5ed11d3-24a2-42f7-aec9-57dc29419420
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/2273fe67-be99-4833-bc11-3c56ba2e8f7e
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №58
-Time: Sun, 20.Jun.21  20:14:14
-Method: POST URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks
+Time: Sun, 20.Jun.21  20:47:55
+Method: POST URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks
 Params: undefined
 Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №59
-Time: Sun, 20.Jun.21  20:14:14
-Method: DELETE URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/a852edd4-af4b-4b85-98f8-93921ce91cca
+Time: Sun, 20.Jun.21  20:47:55
+Method: DELETE URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/39ab01fa-171a-47ad-859f-7f571d31a9e2
 Params: undefined
 Body: {}
 Status: 204 Task was deleted
 
 Log №60
-Time: Sun, 20.Jun.21  20:14:14
-Method: POST URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks
+Time: Sun, 20.Jun.21  20:47:55
+Method: POST URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks
 Params: undefined
 Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
 Status: 201 Task successfully created
 
 Log №61
-Time: Sun, 20.Jun.21  20:14:14
-Method: PUT URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/f92f7f82-03d8-4e57-a2b2-2230ba855c1e
+Time: Sun, 20.Jun.21  20:47:55
+Method: PUT URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/56748ce5-97a9-4de3-a0e6-4c25c6c857d4
 Params: undefined
-Body: {"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"f92f7f82-03d8-4e57-a2b2-2230ba855c1e","userId":null,"boardId":"64918f21-a187-48b6-832b-f5e38ac05b3a"}
+Body: {"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"56748ce5-97a9-4de3-a0e6-4c25c6c857d4","userId":null,"boardId":"b23a8d91-83bf-4d1b-8ff0-9a3f640ca400"}
 Status: 200 Task successfully updated
 
 Log №62
-Time: Sun, 20.Jun.21  20:14:14
-Method: GET URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/f92f7f82-03d8-4e57-a2b2-2230ba855c1e
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/56748ce5-97a9-4de3-a0e6-4c25c6c857d4
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №63
-Time: Sun, 20.Jun.21  20:14:14
-Method: GET URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/f5ed11d3-24a2-42f7-aec9-57dc29419420
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/2273fe67-be99-4833-bc11-3c56ba2e8f7e
 Params: undefined
 Body: {}
 Status: 200 OK
 
 Log №64
-Time: Sun, 20.Jun.21  20:14:14
-Method: DELETE URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/f5ed11d3-24a2-42f7-aec9-57dc29419420
+Time: Sun, 20.Jun.21  20:47:55
+Method: DELETE URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/2273fe67-be99-4833-bc11-3c56ba2e8f7e
 Params: undefined
 Body: {}
 Status: 204 Task was deleted
 
 Log №65
-Time: Sun, 20.Jun.21  20:14:14
-Method: GET URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a/tasks/f5ed11d3-24a2-42f7-aec9-57dc29419420
+Time: Sun, 20.Jun.21  20:47:55
+Method: GET URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400/tasks/2273fe67-be99-4833-bc11-3c56ba2e8f7e
 Params: undefined
 Body: {}
 Status: 404 Task ERROR: Task Not Found
 
 Log №66
-Time: Sun, 20.Jun.21  20:14:14
-Method: DELETE URL: /boards/64918f21-a187-48b6-832b-f5e38ac05b3a
+Time: Sun, 20.Jun.21  20:47:55
+Method: DELETE URL: /boards/b23a8d91-83bf-4d1b-8ff0-9a3f640ca400
 Params: undefined
 Body: {}
 Status: 204 Board was succesfully deleted

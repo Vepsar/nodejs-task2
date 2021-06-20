@@ -20,11 +20,11 @@ const ormconfig = {
   reconnectTries: Number.MAX_VALUE,
   reconnectionInterval: 1000,
   migrationsRun: true,
-  // migrationsTableName: 'custom_migration_table',
+  migrationsTableName: 'custom_migration_table',
   entities: ['src/resources/entities/**/*.ts'],
-  migrations: ['src/common/migrations/**/*.ts'],
+  migrations: ['src/migrations/**/*.ts'],
   cli: {
-    migrationsDir: 'src/common/migrations',
+    migrationsDir: 'src/migrations',
   },
 } as ConnectionOptions;
 
