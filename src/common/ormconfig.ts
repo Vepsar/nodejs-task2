@@ -10,12 +10,12 @@ dotenv.config({
 
 const ormconfig = {
   type: 'postgres',
-  synchronize: true,
+  synchronize: false,
   host: process.env['POSTGRES_HOST'],
-  port: process.env['POSTGRES_PORT'],
-  username: process.env['POSTGRES_USER'],
-  password: process.env['POSTGRES_PASSWORD'],
-  database: process.env['POSTGRESS_DB'],
+  port: process.env['PSQL_PORT'],
+  username: process.env['PSQL_USER'],
+  password: process.env['PSQL_PASSWORD'],
+  database: process.env['PSQL_DB'],
   autoReconnect: true,
   reconnectTries: Number.MAX_VALUE,
   reconnectionInterval: 1000,
@@ -28,4 +28,4 @@ const ormconfig = {
   },
 } as ConnectionOptions;
 
-export = ormconfig;
+export default ormconfig;

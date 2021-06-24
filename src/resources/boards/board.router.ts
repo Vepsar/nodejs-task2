@@ -60,7 +60,7 @@ router
     async (req: express.Request, res: express.Response, next: NextFunction) => {
       try {
         const { id } = req.params;
-        boardService.deleteBoard(id);
+        await boardService.deleteBoard(id);
         res.status(204).send('deleted');
         res.statusMessage = 'Board was succesfully deleted';
         next();

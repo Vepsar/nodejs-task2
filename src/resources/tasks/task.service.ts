@@ -46,8 +46,9 @@ const updateTask = (
  * Service for deleting task by ID
  * @param {String|undefined} taskid - task ID
  */
-const deleteTask = (taskid: string | undefined): Promise<void> =>
-  taskRepo.deleteTask(taskid);
+const deleteTask = (
+  taskid: string | undefined
+): Promise<'deleted' | 'not found'> => taskRepo.deleteTask(taskid);
 
 /**
  * Service for removing deleted User from their tasks

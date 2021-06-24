@@ -95,7 +95,7 @@ router
     async (req: express.Request, res: express.Response, next: NextFunction) => {
       try {
         const { taskid } = req.params;
-        taskService.deleteTask(taskid);
+        await taskService.deleteTask(taskid);
         res.status(204).send('deleted');
         res.statusMessage = 'Task was deleted';
         next();

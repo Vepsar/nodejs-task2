@@ -68,10 +68,14 @@ const updateTask = async (
  * Delete task by ID
  * @param {String} taskid - ID of task that need to delete
  */
-const deleteTask = async (taskid: string | undefined): Promise<void> => {
+const deleteTask = async (
+  taskid: string | undefined
+): Promise<'deleted' | 'not found'> => {
   const taskRepo = getRepository(Task);
-  if (taskid === undefined) return undefined;
-  await taskRepo.delete(taskid);
+  if (taskid === undefined) return 'not found';
+  const deleted = await taskRepo.delete({ id: taskid });
+  if (deleted.affected) return 'deleted';
+  return 'not found';
 };
 
 /**
@@ -85,7 +89,7 @@ const deleteByUserId = async (userid: string | undefined): Promise<void> => {
     return undefined;
   }
   tasks.forEach((task: Task) => {
-    if (task.id !== undefined) taskRepo.update(task.id, { userId: undefined });
+    if (task.id !== undefined) taskRepo.update(task.id, { userId: null });
   });
 };
 

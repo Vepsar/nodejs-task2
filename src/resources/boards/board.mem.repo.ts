@@ -94,7 +94,7 @@ const deleteBoard = async (id: string | undefined): Promise<void> => {
   const boardRepo = getRepository(Board);
   const resp = boardRepo.findOne(id);
   if (resp === undefined || id === undefined) {
-    return;
+    return undefined;
   }
   await boardRepo.delete(id);
 
