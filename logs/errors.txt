@@ -1,0 +1,35 @@
+Error №1
+Time: Thu, 24.Jun.21  12:38:04
+Status: 404
+Error message: Task ERROR: Task Not Found
+
+Error №2
+Time: Thu, 24.Jun.21  12:38:06
+Status: 404
+Error message: Board ERROR: Board not found
+
+Error №3
+Time: Thu, 24.Jun.21  12:38:06
+Status: 404
+Error message: Task ERROR: Task Not Found
+
+Error №4
+Time: Thu, 24.Jun.21  12:38:06
+Status: 404
+Error message: Task ERROR: Task Not Found
+
+Error №5
+Time: Thu, 24.Jun.21  12:38:06
+Status: 404
+Error message: Task ERROR: Task Not Found
+
+Error №6
+Time: Thu, 24.Jun.21  12:38:06
+Status: 404
+Error message: Task ERROR: Task Not Found
+
+Error №7
+Time: Thu, 24.Jun.21  12:38:06
+Status: 404
+Error message: Task ERROR: Task Not Found
+
