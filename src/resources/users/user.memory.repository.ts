@@ -70,4 +70,14 @@ const updateUser = async (
   const updUser = await userRepo.update(id, data);
   return updUser.raw;
 };
-export { getAll, getById, postUser, deleteUser, updateUser };
+
+const getUserByLogin = async (login: string): Promise<User | undefined> => {
+  const userRepo = getRepository(User);
+  const resp = userRepo.findOne({ where: { login: login } });
+  if (resp !== undefined) {
+    return resp;
+  }
+  return undefined;
+};
+
+export { getAll, getById, postUser, deleteUser, updateUser, getUserByLogin };

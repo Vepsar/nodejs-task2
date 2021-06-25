@@ -44,4 +44,7 @@ const updateUser = (
   data: IUserRequest
 ): Promise<User | undefined> => usersRepo.updateUser(id, data);
 
-export { getAll, getById, postUser, deleteUser, updateUser };
+const getUserByLogin = (login: string): Promise<User | undefined> =>
+  usersRepo.getUserByLogin(login);
+
+export { getAll, getById, postUser, deleteUser, updateUser, getUserByLogin };
