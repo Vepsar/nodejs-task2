@@ -1,5 +1,4 @@
 import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
-// import { Columns } from './column';
 
 @Entity({ name: 'board' })
 export class Board extends BaseEntity {
@@ -9,7 +8,6 @@ export class Board extends BaseEntity {
   @Column('varchar', { length: 30 })
   title: string = '';
 
-  //   //   @OneToMany()
   @Column('json')
   columns: string;
 }

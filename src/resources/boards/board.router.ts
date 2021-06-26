@@ -1,5 +1,4 @@
 import express, { NextFunction } from 'express';
-// import { Board } from '../entities/board';
 import * as boardService from './board.service';
 
 const router = express.Router({ mergeParams: true });

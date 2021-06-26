@@ -1,6 +1,5 @@
 import express, { NextFunction } from 'express';
 import { ITaskRequest } from '../../utils/types';
-// import { Task } from '../entities/task';
 import * as taskService from './task.service';
 
 const router = express.Router({ mergeParams: true });
@@ -36,7 +35,6 @@ router
         if (task === undefined) {
           res.status(404);
           res.statusMessage = 'Task ERROR: Task Not Found';
-          console.error();
         } else {
           res.status(200).json(task);
         }

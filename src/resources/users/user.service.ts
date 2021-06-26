@@ -1,5 +1,4 @@
 import * as usersRepo from './user.memory.repository';
-// import User, { IUserRequest } from './user.model';
 import { User } from '../entities/user';
 import { IUserRequest } from '../../utils/types';
 /**
@@ -28,7 +27,6 @@ const postUser = (user: User): Promise<User | undefined> =>
  * Deleting user by his ID
  * @param {String} id - ID of removing user
  */
-// const deleteUser = (id: string | undefined): Promise<'deleted' | 'not_found'> =>
 const deleteUser = (id: string | undefined): Promise<'deleted' | 'not_found'> =>
   usersRepo.deleteUser(id);
 

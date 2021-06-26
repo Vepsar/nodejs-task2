@@ -28,7 +28,6 @@ const getBoardById = async (id: string): Promise<Board | undefined> => {
   const boardRepo = getRepository(Board);
   return await boardRepo.findOne(id);
 };
-// boards.find((board) => board.id === id);
 
 /**
  * Create board in DB from the receiving data
@@ -63,17 +62,6 @@ const updateBoard = async (
   if (resp === undefined || id == undefined) return undefined;
   const updBoard = await boardRepo.update(id, data);
   return updBoard.raw;
-  // const idNum = boards.findIndex((board) => board.id === id);
-  // if (idNum !== undefined && typeof id === 'string') {
-  //   const updBrd = {
-  //     id,
-  //     title: data.title,
-  //     columns: data.columns,
-  //   };
-  //   boards.splice(idNum, 1, updBrd);
-  //   return boards.find((board) => board.id === id);
-  // }
-  // return undefined;
 };
 
 /**
@@ -97,9 +85,6 @@ const deleteBoard = async (id: string | undefined): Promise<void> => {
     return undefined;
   }
   await boardRepo.delete(id);
-
-  // const idNum = boards.findIndex((board) => board.id === id);
-  // boards.splice(idNum, 1);
 };
 
 export { getAllBoards, getBoardById, createBoard, deleteBoard, updateBoard };

@@ -52,10 +52,8 @@ router
       try {
         const data = { ...req.body };
         const newUser = await usersService.postUser(data);
-        // console.log(newUser);
         if (newUser !== undefined) {
           res.status(201).json(User.toResponse(newUser));
-          // res.status(201).json(newUser);
           res.statusMessage = 'User created';
         }
         next();
@@ -93,7 +91,6 @@ router.route('/:id').put(
       const updUser = await usersService.updateUser(id, data);
       if (updUser !== undefined) {
         res.status(200).json(User.toResponse(updUser));
-        // res.status(200).json(updUser);
         res.statusMessage = 'User was updated succesfully';
       } else {
         res.status(404).send();

@@ -1,5 +1,3 @@
-// import { Columns } from '../resources/entities/column';
-
 interface IUserRequest {
   name: string;
   login: string;

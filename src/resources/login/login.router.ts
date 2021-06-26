@@ -1,6 +1,4 @@
 import express, { NextFunction } from 'express';
-// import * as jwt from 'jsonwebtoken'
-// import {getUserByLogin} from '../users/user.service'
 import { getToken } from './login.service';
 
 const router = express.Router({ mergeParams: true });
