@@ -1,125 +1,120 @@
 Error №1
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:02
 Status: 500
 Error message: Internal Server Error
 
 Error №2
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:02
 Status: 500
 Error message: Internal Server Error
 
 Error №3
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:02
 Status: 500
 Error message: Internal Server Error
 
 Error №4
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:02
 Status: 500
 Error message: Internal Server Error
 
 Error №5
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:02
 Status: 500
 Error message: Internal Server Error
 
 Error №6
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №7
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №8
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №9
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
 Type: Unhandled Rejection
 Error message: QueryFailedError: invalid input syntax for type uuid: "12345"
 
 Error №9
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
+Type: Unhandled Rejection
+Error message: QueryFailedError: invalid input syntax for type uuid: "12345"
+
+Error №9
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №10
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №11
-Time: Sat, 26.Jun.21  15:25:56
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №12
-Time: Sat, 26.Jun.21  15:25:57
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №13
-Time: Sat, 26.Jun.21  15:25:57
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №14
-Time: Sat, 26.Jun.21  15:25:57
-Type: Unhandled Rejection
-Error message: QueryFailedError: invalid input syntax for type uuid: "12345"
-
-Error №14
-Time: Sat, 26.Jun.21  15:25:57
-Type: Unhandled Rejection
-Error message: QueryFailedError: invalid input syntax for type uuid: "12345"
-
-Error №14
-Time: Sat, 26.Jun.21  15:25:57
+Time: Sat, 26.Jun.21  15:42:03
 Type: Unhandled Rejection
 Error message: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
 
 Error №14
-Time: Sat, 26.Jun.21  15:25:57
+Time: Sat, 26.Jun.21  15:42:03
 Status: 500
 Error message: Internal Server Error
 
 Error №15
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:04
 Status: 404
 Error message: Task ERROR: Task Not Found
 
 Error №16
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:04
 Status: 404
 Error message: Board ERROR: Board not found
 
 Error №17
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:05
 Status: 404
 Error message: Task ERROR: Task Not Found
 
 Error №18
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:05
 Status: 404
 Error message: Task ERROR: Task Not Found
 
 Error №19
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:05
 Status: 404
 Error message: Task ERROR: Task Not Found
 
 Error №20
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:05
 Status: 404
 Error message: Task ERROR: Task Not Found
 
 Error №21
-Time: Sat, 26.Jun.21  15:25:58
+Time: Sat, 26.Jun.21  15:42:05
 Status: 404
 Error message: Task ERROR: Task Not Found
 

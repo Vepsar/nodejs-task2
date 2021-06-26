@@ -90,7 +90,7 @@ const deleteByUserId = async (userid: string | undefined): Promise<void> => {
       tasks.map(
         async (task: Task): Promise<void> => {
           if (task.id !== undefined)
-            await taskRepo.update(task.id, { userId: null });
+            await taskRepo.update(task.id, Object.assign({ userId: null }));
         }
       )
     );

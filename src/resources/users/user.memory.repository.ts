@@ -43,14 +43,17 @@ const postUser = async (data: IUserResp): Promise<User | undefined> => {
  * @returns {Promise<void>}
  * Return message about delete
  */
-const deleteUser = async (id: string | undefined): Promise<void> => {
+const deleteUser = async (
+  id: string | undefined
+): Promise<'deleted' | 'not_found'> => {
   await deleteByUserId(id);
   const userRepo = getRepository(User);
   const resp = userRepo.findOne(id);
-  if (id === undefined || resp === undefined) {
-    return;
+  if (id !== undefined && resp !== undefined) {
+    await userRepo.delete(id);
+    return 'deleted';
   }
-  await userRepo.delete(id);
+  return 'not_found';
 };
 
 /**

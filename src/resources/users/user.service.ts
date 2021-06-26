@@ -29,7 +29,7 @@ const postUser = (user: User): Promise<User | undefined> =>
  * @param {String} id - ID of removing user
  */
 // const deleteUser = (id: string | undefined): Promise<'deleted' | 'not_found'> =>
-const deleteUser = (id: string | undefined): Promise<void> =>
+const deleteUser = (id: string | undefined): Promise<'deleted' | 'not_found'> =>
   usersRepo.deleteUser(id);
 
 /**
