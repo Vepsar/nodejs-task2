@@ -1,0 +1,38 @@
+version: '3.0'
+services:
+  node:
+    build: .
+    ports:
+      - '${PORT}:${PORT}'
+    depends_on:
+      - postgres
+    environment:
+      - PORT=${PORT}
+    networks:
+      - user-net
+    volumes:
+      - ./logs:/usr/app/src/logs
+      - ./src:/usr/app/src
+      - .:/usr/app
+    restart: always
+    env_file: .env
+  postgres:
+    image: docker-basics-postgres
+    build: ./database/
+    ports:
+      - '${PSQL_PORT}:${PSQL_PORT}'
+    environment:
+      PG_DATA: /var/lib/postresql/data
+      POSTGRES_USER: '${PSQL_USER}'
+      POSTGRES_PASSWORD: '${PSQL_PASSWORD}'
+      POSTGRES_DB: '${PSQL_DB}'
+    volumes:
+      - ./database/pgdata:/var/lib/postgresql/data
+    networks:
+      - user-net
+    restart: always
+volumes:
+  pgdata:
+networks:
+  user-net:
+    driver: bridge
