@@ -1,19 +1,20 @@
-import * as jwt from 'jsonwebtoken';
+import { createToken } from '../../utils/authmiddle';
+import { chechHash } from '../../utils/hashmiddle';
 import { getUserByLogin } from '../users/user.service';
 
 const getToken = async (
   login: string,
-  _password: string
+  password: string
 ): Promise<string | undefined> => {
   const user = await getUserByLogin(login);
   if (user !== undefined) {
     const { id, login } = user;
-    const token: string = jwt.sign(
-      { id, login },
-      `${process.env['SECRET_KEY']}`,
-      { expiresIn: '5m' }
-    );
-    return token;
+    const { password: hashPassword } = user;
+    const compare = await chechHash(password, hashPassword);
+    if (compare) {
+      const token: string = await createToken(id, login);
+      return token;
+    }
   }
   return undefined;
 };

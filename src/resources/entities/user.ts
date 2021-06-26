@@ -1,7 +1,20 @@
-import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  BaseEntity,
+  BeforeInsert,
+} from 'typeorm';
+import { createHash } from '../../utils/hashmiddle';
+import { IUserResp } from '../../utils/types';
 
 @Entity({ name: 'user' })
 export class User extends BaseEntity {
+  @BeforeInsert()
+  async hashpass() {
+    this.password = await createHash(this.password);
+  }
+
   @PrimaryGeneratedColumn('uuid')
   id: string | undefined;
 
@@ -11,6 +24,11 @@ export class User extends BaseEntity {
   @Column('varchar', { length: 20 })
   login: string = '';
 
-  @Column('varchar', { length: 25, select: false, nullable: true })
+  @Column('text', { nullable: true })
   password: string | undefined;
+
+  static toResponse(user: User): IUserResp {
+    const { id, name, login } = user;
+    return { id, name, login };
+  }
 }

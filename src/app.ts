@@ -13,6 +13,7 @@ import {
   uncaughtExceptionHandler,
   unhandledRejectionHandler,
 } from './utils/middleware';
+import { tokenCheck } from './utils/authmiddle';
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
@@ -29,12 +30,14 @@ app.use('/', (req, res, next) => {
   next();
 });
 
+app.use('/login', loginRouter);
+
 process.on('uncaughtException', uncaughtExceptionHandler);
 process.on('unhandledRejection', unhandledRejectionHandler);
-app.use('/login', loginRouter);
-app.use('/users', userRouter);
-app.use('/boards', boardRouter);
-app.use('/boards', taskRouter);
+
+app.use('/users', tokenCheck, userRouter);
+app.use('/boards', tokenCheck, boardRouter);
+app.use('/boards', tokenCheck, taskRouter);
 
 app.use(logger);
 app.use(errorDefLogger);

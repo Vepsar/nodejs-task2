@@ -13,11 +13,12 @@ router
         const { login, password } = req.body;
         const token = await getToken(login, password);
         if (token !== undefined) {
-          res.status(200).json(token);
+          res.status(200).json({ token });
         } else {
-          res.status(403);
+          res.status(403).send('autherr');
           res.statusMessage = 'Authorization error: ';
         }
+        next();
       } catch (err) {
         if (err) {
           next(err);

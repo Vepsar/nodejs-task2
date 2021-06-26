@@ -73,7 +73,8 @@ const updateUser = async (
 
 const getUserByLogin = async (login: string): Promise<User | undefined> => {
   const userRepo = getRepository(User);
-  const resp = userRepo.findOne({ where: { login: login } });
+  const usersarr = await userRepo.find({ where: {} });
+  const resp = usersarr.find((user) => user.login === login);
   if (resp !== undefined) {
     return resp;
   }
