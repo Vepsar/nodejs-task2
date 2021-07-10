@@ -14,6 +14,7 @@ export class LoginController {
     const token: TokenDto = {
       token: await this.loginService.getToken(createLoginDto),
     };
+
     if (token !== undefined) return token;
     return undefined;
   }

@@ -6,13 +6,14 @@ import {
   NestFastifyApplication,
   FastifyAdapter,
 } from '@nestjs/platform-fastify';
+// import * as fs from 'fs';
 
 async function bootstrap() {
   var app;
   if (USE_FASTIFY === 'true') {
     app = await NestFactory.create<NestFastifyApplication>(
       AppModule,
-      new FastifyAdapter(),
+      new FastifyAdapter({ logger: false }),
     );
   } else {
     app = await NestFactory.create(AppModule);
@@ -24,6 +25,8 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
+
+  // fs.readFileSync('doc/api.yaml', JSON.stringify(document));
 
   SwaggerModule.setup('/doc', app, document);
 
