@@ -4,7 +4,7 @@
     "target": "es2020",
     "module": "commonjs",
     "allowJs": false,
-    "outDir": "./build",
+    "outDir": "./dist",
     "rootDir": "./src",
     "downlevelIteration": false,
     "strict": true,
@@ -20,7 +20,12 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "strictPropertyInitialization": false,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "incremental": true,
+    "sourceMap": true
   },
   "exclude": ["node_modules/"]
 }
