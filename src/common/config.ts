@@ -17,6 +17,11 @@ const { POSTGRES_PASSWORD } = process.env;
 const { POSTGRES_DB } = process.env;
 const { SECRET_KEY } = process.env;
 const { USE_FASTIFY } = process.env;
+const { PSQL_HOST } = process.env;
+const { PSQL_PORT } = process.env;
+const { PSQL_USER } = process.env;
+const { PSQL_PASSWORD } = process.env;
+const { PSQL_DB } = process.env;
 
 export {
   PORT,
@@ -31,4 +36,9 @@ export {
   POSTGRES_USER,
   SECRET_KEY,
   USE_FASTIFY,
+  PSQL_DB,
+  PSQL_PASSWORD,
+  PSQL_USER,
+  PSQL_PORT,
+  PSQL_HOST,
 };

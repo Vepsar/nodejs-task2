@@ -10,15 +10,18 @@ import {
   HttpException,
   HttpStatus,
   UseFilters,
+  UseInterceptors,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { loginGuard } from 'src/login/login.guard';
 import { HttpExceptionFilter } from 'src/utils/http-exeption.filter';
+import { LoggerInterceptor } from 'src/logger/logger.interceptor';
 @UseGuards(loginGuard)
 @Controller('users')
 @UseFilters(HttpExceptionFilter)
+@UseInterceptors(LoggerInterceptor)
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 

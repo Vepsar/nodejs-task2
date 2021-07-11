@@ -6,17 +6,22 @@ import {
   NestFastifyApplication,
   FastifyAdapter,
 } from '@nestjs/platform-fastify';
-// import * as fs from 'fs';
+import { WinstonModule } from 'nest-winston';
+import logconfig from './common/logconfig';
 
 async function bootstrap() {
   var app;
   if (USE_FASTIFY === 'true') {
     app = await NestFactory.create<NestFastifyApplication>(
       AppModule,
-      new FastifyAdapter({ logger: false }),
+      new FastifyAdapter({
+        logger: true,
+      }),
     );
   } else {
-    app = await NestFactory.create(AppModule);
+    app = await NestFactory.create(AppModule, {
+      logger: WinstonModule.createLogger(logconfig),
+    });
   }
 
   const config = new DocumentBuilder()
@@ -26,11 +31,9 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  // fs.readFileSync('doc/api.yaml', JSON.stringify(document));
-
   SwaggerModule.setup('/doc', app, document);
 
-  await app.listen(Number(PORT));
+  await app.listen(Number(PORT), '0.0.0.0');
   console.log(
     `${
       USE_FASTIFY === 'true' ? 'Fastify' : 'Express'

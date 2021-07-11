@@ -10,7 +10,9 @@ import {
   HttpException,
   HttpStatus,
   UseFilters,
+  UseInterceptors,
 } from '@nestjs/common';
+import { LoggerInterceptor } from 'src/logger/logger.interceptor';
 import { loginGuard } from 'src/login/login.guard';
 import { HttpExceptionFilter } from 'src/utils/http-exeption.filter';
 import { BoardsService } from './boards.service';
@@ -20,6 +22,7 @@ import { UpdateBoardDto } from './dto/update-board.dto';
 @Controller('boards')
 @UseGuards(loginGuard)
 @UseFilters(HttpExceptionFilter)
+@UseInterceptors(LoggerInterceptor)
 export class BoardsController {
   constructor(private readonly boardsService: BoardsService) {}
 

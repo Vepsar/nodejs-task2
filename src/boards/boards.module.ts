@@ -6,6 +6,9 @@ import { Board } from './entities/board.entity';
 import { LoginModule } from 'src/login/login.module';
 import { TasksModule } from 'src/tasks/tasks.module';
 import { HttpExceptionFilter } from 'src/utils/http-exeption.filter';
+import { WinstonModule } from 'nest-winston';
+import logconfig from 'src/common/logconfig';
+import { LoggerInterceptor } from 'src/logger/logger.interceptor';
 
 @Module({
   controllers: [BoardsController],
@@ -15,6 +18,8 @@ import { HttpExceptionFilter } from 'src/utils/http-exeption.filter';
     forwardRef(() => LoginModule),
     TasksModule,
     HttpExceptionFilter,
+    WinstonModule.forRoot(logconfig),
+    LoggerInterceptor,
   ],
   exports: [TypeOrmModule],
 })

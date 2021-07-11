@@ -24,8 +24,8 @@
     "removeComments": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "incremental": true,
+    // "incremental": true,
     "sourceMap": true
   },
-  "exclude": ["node_modules/"]
+  "exclude": ["node_modules/", "dist"]
 }

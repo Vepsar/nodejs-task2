@@ -11,6 +11,7 @@ import {
   HttpException,
   HttpStatus,
   UseFilters,
+  UseInterceptors,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { CreateTaskDto } from './dto/create-task.dto';
@@ -18,10 +19,12 @@ import { UpdateTaskDto } from './dto/update-task.dto';
 import { Response } from 'express';
 import { loginGuard } from 'src/login/login.guard';
 import { HttpExceptionFilter } from 'src/utils/http-exeption.filter';
+import { LoggerInterceptor } from 'src/logger/logger.interceptor';
 
 @Controller('boards/:boardid/tasks')
 @UseGuards(loginGuard)
 @UseFilters(HttpExceptionFilter)
+@UseInterceptors(LoggerInterceptor)
 export class TasksController {
   constructor(private readonly tasksService: TasksService) {}
 
