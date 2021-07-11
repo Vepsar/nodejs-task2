@@ -4,7 +4,6 @@ import {
   ArgumentsHost,
   HttpException,
 } from '@nestjs/common';
-// import { Request, Response } from 'express';
 import { FastifyReply, FastifyRequest } from 'fastify';
 import { WinstonModule } from 'nest-winston';
 import logconfig from 'src/common/logconfig';

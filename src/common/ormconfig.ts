@@ -32,7 +32,6 @@ const ormconfig = {
   reconnectTries: Number.MAX_VALUE,
   reconnectionInterval: 1000,
   migrationsRun: true,
-  // migrationsTableName: 'custom_migration_table',
   entities: [User, Board, Task],
   migrations: ['dist/migrations/**/*.js'],
   cli: {
