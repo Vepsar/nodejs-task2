@@ -1,0 +1,1856 @@
+11-Jul-2021 16:42:44 Method: GET; PATH: /users; STATUS: 200
+Body: {}
+QuerryParams: undefined
+
+11-Jul-2021 16:42:55 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 16:43:20 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 16:43:42 Method: GET; PATH: /users; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: PUT; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: PUT; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: DELETE; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: PUT; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:18:45 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: PUT; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: PUT; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: GET; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: PUT; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: DELETE; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:20:25 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: PUT; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: PUT; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: PUT; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: DELETE; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:21:13 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: PUT; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: PUT; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: PUT; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: DELETE; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: GET; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:30:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: PUT; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: PUT; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: DELETE; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: PUT; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: GET; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:34:18 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards/undefined/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: PUT; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: PUT; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: GET; PATH: /boards/undefined/tasks/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: DELETE; PATH: /boards/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: PUT; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: DELETE; PATH: /users/undefined; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:39:19 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /users; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /boards/d6bb8db2-4efa-4a76-a1a9-21df6f989f88; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: GET; PATH: /users/ca026da3-639f-487d-b3c4-47188934ffe8; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:45:47 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:48 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:48 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:48 Method: PUT; PATH: /boards/e2eda13a-c825-475e-b8e3-433ff298cc12; STATUS: 200
+Body: {"title":"Autotest updated board","id":"e2eda13a-c825-475e-b8e3-433ff298cc12","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:45:48 Method: GET; PATH: /boards/e2eda13a-c825-475e-b8e3-433ff298cc12; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:45:48 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: GET; PATH: /users; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: GET; PATH: /users/1eddf64e-f6ef-4384-a22d-c411e5613d34; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: PUT; PATH: /users/435720cf-c543-4947-b522-63767632377d; STATUS: 200
+Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"435720cf-c543-4947-b522-63767632377d"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: GET; PATH: /users/435720cf-c543-4947-b522-63767632377d; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:14 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: GET; PATH: /boards/df48e703-f4a6-46bb-9bee-2da8ce84cb53; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: PUT; PATH: /boards/1a70ac17-c419-4842-a209-ca212fd87936; STATUS: 200
+Body: {"title":"Autotest updated board","id":"1a70ac17-c419-4842-a209-ca212fd87936","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: GET; PATH: /boards/1a70ac17-c419-4842-a209-ca212fd87936; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:48:15 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:55 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /users; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks; STATUS: 201
+Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /users/93c15ff8-55ff-4f13-8431-a7a387decb80; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: DELETE; PATH: /users/93c15ff8-55ff-4f13-8431-a7a387decb80; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/5fced11b-be2c-4b2a-9e2b-9c4fda9ecbeb; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/88f4c104-12b7-4f49-91ce-be0ed4517ebf; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks; STATUS: 201
+Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: DELETE; PATH: /users/27705691-80d6-4b86-b10a-fedc3967aa0d; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: DELETE; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/e25c6c2c-a232-42ac-98ac-f95b996939d4; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: DELETE; PATH: /boards/4bdc3128-d8d8-497c-9971-8086b72333aa; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks; STATUS: 201
+Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: PUT; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/adacad26-7148-4ed7-a0ba-b5ed83a2719e; STATUS: 200
+Body: {"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"adacad26-7148-4ed7-a0ba-b5ed83a2719e","userId":null,"boardId":"36c5e47d-ce4c-4345-b087-c563b3fcda0b"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: PUT; PATH: /users/0649d8cf-738c-4e2d-9113-b34f0b8237d1; STATUS: 200
+Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"0649d8cf-738c-4e2d-9113-b34f0b8237d1"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/adacad26-7148-4ed7-a0ba-b5ed83a2719e; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /users/0649d8cf-738c-4e2d-9113-b34f0b8237d1; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: PUT; PATH: /boards/6a0fb339-6206-49af-8642-56af54d3d1ed; STATUS: 200
+Body: {"title":"Autotest updated board","id":"6a0fb339-6206-49af-8642-56af54d3d1ed","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/5fced11b-be2c-4b2a-9e2b-9c4fda9ecbeb; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: DELETE; PATH: /users/0649d8cf-738c-4e2d-9113-b34f0b8237d1; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: GET; PATH: /boards/6a0fb339-6206-49af-8642-56af54d3d1ed; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:56 Method: DELETE; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/5fced11b-be2c-4b2a-9e2b-9c4fda9ecbeb; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b/tasks/5fced11b-be2c-4b2a-9e2b-9c4fda9ecbeb; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/6a0fb339-6206-49af-8642-56af54d3d1ed; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/36c5e47d-ce4c-4345-b087-c563b3fcda0b; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /users/9e5bd1ec-aa71-424f-a2e8-c81cefcb8afe; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/7333bd0e-7047-4749-b8bd-c682cde5cfe2; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/7333bd0e-7047-4749-b8bd-c682cde5cfe2; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95/tasks; STATUS: 201
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"708daee4-82c1-49bc-b2da-ba824e280111","boardId":"6b7a8267-9754-4811-82ef-6b6e8166ce95"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95/tasks; STATUS: 201
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"708daee4-82c1-49bc-b2da-ba824e280111","boardId":"6b7a8267-9754-4811-82ef-6b6e8166ce95"}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks; STATUS: 201
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"f713882f-59fe-4198-8779-d4527342d159","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks; STATUS: 201
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"f713882f-59fe-4198-8779-d4527342d159","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /users/708daee4-82c1-49bc-b2da-ba824e280111; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95/tasks/61f25206-6590-4b81-b1c9-729fc19eb732; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks; STATUS: 201
+Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"f713882f-59fe-4198-8779-d4527342d159","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95/tasks/610074c7-60fb-49b2-ad3a-e11509064254; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks; STATUS: 201
+Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"f713882f-59fe-4198-8779-d4527342d159","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: POST; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks; STATUS: 201
+Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"f713882f-59fe-4198-8779-d4527342d159","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95/tasks/61f25206-6590-4b81-b1c9-729fc19eb732; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/ce0db8ed-659c-4398-b31b-c964a9549cbc; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/a8fae7ef-7aea-4aa3-97b0-8282e5c175e7; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/94529dc9-3451-40dc-8480-2d8eca41ac10; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/8461dc10-c0cf-4c56-9afe-323c684096c1; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95/tasks/610074c7-60fb-49b2-ad3a-e11509064254; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/506ff9d0-fe16-41eb-98f3-b1daad362ac1; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/6b7a8267-9754-4811-82ef-6b6e8166ce95; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/ce0db8ed-659c-4398-b31b-c964a9549cbc; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/a8fae7ef-7aea-4aa3-97b0-8282e5c175e7; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/94529dc9-3451-40dc-8480-2d8eca41ac10; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/8461dc10-c0cf-4c56-9afe-323c684096c1; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: GET; PATH: /boards/f713882f-59fe-4198-8779-d4527342d159/tasks/506ff9d0-fe16-41eb-98f3-b1daad362ac1; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 17:49:57 Method: DELETE; PATH: /boards/88f4c104-12b7-4f49-91ce-be0ed4517ebf; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:48 Method: GET; PATH: /users; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:48 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:48 Method: GET; PATH: /users/525fead9-fc75-4e14-a88d-dcf469519833; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: DELETE; PATH: /users/525fead9-fc75-4e14-a88d-dcf469519833; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: DELETE; PATH: /users/e4e52a64-bdca-469f-bc7d-ed9e8dc1db7a; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: PUT; PATH: /users/fb5e6683-0ec2-4162-a9ff-0c03f4937902; STATUS: 200
+Body: {"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"fb5e6683-0ec2-4162-a9ff-0c03f4937902"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: GET; PATH: /users/fb5e6683-0ec2-4162-a9ff-0c03f4937902; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: DELETE; PATH: /users/fb5e6683-0ec2-4162-a9ff-0c03f4937902; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: DELETE; PATH: /users/6548d205-e728-4c23-ad92-575aa317a77b; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: POST; PATH: /users; STATUS: 201
+Body: {"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:49 Method: POST; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81/tasks; STATUS: 201
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"9f7ad21f-24ba-4014-a8de-e782d24ac31d","boardId":"116babb9-05e1-484d-8abd-efe01727ed81"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: POST; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81/tasks; STATUS: 201
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"9f7ad21f-24ba-4014-a8de-e782d24ac31d","boardId":"116babb9-05e1-484d-8abd-efe01727ed81"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /users/9f7ad21f-24ba-4014-a8de-e782d24ac31d; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81/tasks/947d41c3-34c1-471c-b9dd-ecf553a7d424; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81/tasks/f93bda4f-ccfb-47d7-b1f0-68fcfeac34ac; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81/tasks/947d41c3-34c1-471c-b9dd-ecf553a7d424; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81/tasks/f93bda4f-ccfb-47d7-b1f0-68fcfeac34ac; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /boards/116babb9-05e1-484d-8abd-efe01727ed81; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: POST; PATH: /boards/12345/tasks; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: PUT; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /boards/12345/tasks/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards/6ec09c73-1e44-44c7-b500-f39555fe2043; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /boards/174622f0-6d1b-467f-8ecc-f728faaf2f33; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: PUT; PATH: /boards/4b6c60a5-fb09-409b-94f5-5afd40442095; STATUS: 200
+Body: {"title":"Autotest updated board","id":"4b6c60a5-fb09-409b-94f5-5afd40442095","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: GET; PATH: /boards/4b6c60a5-fb09-409b-94f5-5afd40442095; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:50 Method: DELETE; PATH: /boards/4b6c60a5-fb09-409b-94f5-5afd40442095; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: DELETE; PATH: /boards/54dc8dfc-5f0b-4665-840d-c64eb0715d10; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/54dc8dfc-5f0b-4665-840d-c64eb0715d10; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks; STATUS: 201
+Body: {"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"ab35d725-b25d-4c78-9913-7f27ef80e5ac","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks; STATUS: 201
+Body: {"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"ab35d725-b25d-4c78-9913-7f27ef80e5ac","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks; STATUS: 201
+Body: {"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"ab35d725-b25d-4c78-9913-7f27ef80e5ac","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks; STATUS: 201
+Body: {"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"ab35d725-b25d-4c78-9913-7f27ef80e5ac","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks; STATUS: 201
+Body: {"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"ab35d725-b25d-4c78-9913-7f27ef80e5ac","userId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/f6eb7062-c2c5-4736-9922-a4bed97f90ee; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/d746a3e9-6e11-4324-9c95-b87a7a0a3a74; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/8e593c57-4840-4752-bf61-979265a3d489; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/a7ff4e74-6e24-437f-972b-7b52eb908786; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/3aca1b79-5f15-4947-a77b-bed4762e18bf; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: DELETE; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/8e593c57-4840-4752-bf61-979265a3d489; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/f6eb7062-c2c5-4736-9922-a4bed97f90ee; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/d746a3e9-6e11-4324-9c95-b87a7a0a3a74; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/a7ff4e74-6e24-437f-972b-7b52eb908786; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/ab35d725-b25d-4c78-9913-7f27ef80e5ac/tasks/3aca1b79-5f15-4947-a77b-bed4762e18bf; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: DELETE; PATH: /boards/6ec09c73-1e44-44c7-b500-f39555fe2043; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards; STATUS: 201
+Body: {"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks; STATUS: 201
+Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: GET; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/872be1a3-8dad-4fd3-bd65-9dbcad3947b9; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks; STATUS: 201
+Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: DELETE; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/15180ebe-6b9d-48d7-a811-2b985c0e0a99; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: POST; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks; STATUS: 201
+Body: {"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:51 Method: PUT; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/ffe3968d-4bf2-4225-bc1a-4a2e02dd95d7; STATUS: 200
+Body: {"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"ffe3968d-4bf2-4225-bc1a-4a2e02dd95d7","userId":null,"boardId":"6bbacd05-f461-4496-b199-e07aa68bc639"}
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/ffe3968d-4bf2-4225-bc1a-4a2e02dd95d7; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/872be1a3-8dad-4fd3-bd65-9dbcad3947b9; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: DELETE; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/872be1a3-8dad-4fd3-bd65-9dbcad3947b9; STATUS: 404
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639/tasks/872be1a3-8dad-4fd3-bd65-9dbcad3947b9; STATUS: 404
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: DELETE; PATH: /boards/6bbacd05-f461-4496-b199-e07aa68bc639; STATUS: 200
+Body: null
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: POST; PATH: /boards; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: PUT; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: DELETE; PATH: /boards/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: GET; PATH: /users/123; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: POST; PATH: /users; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: PUT; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
+11-Jul-2021 15:04:52 Method: DELETE; PATH: /users/12345; STATUS: 401
+Body: undefined
+QuerryParams: undefined
+
